@@ -1,11 +1,11 @@
 package com.bridgelabz.algorithemProgram;
-import java.util.Scanner;
+import com.bridgelabz.Utility.Util;
 public class PrimeNumberRange 
 {
 	public static void main(String[] args)
 	{
-	 Scanner sc=new Scanner(System.in);	
-	 int num=sc.nextInt();
+		System.out.println("Enter the limit till which you want to calculate prime numbers");
+	 int num=Util.readint();
 	 CalculatePrime(num);
 	}
 	
@@ -31,13 +31,16 @@ public class PrimeNumberRange
 	}
 	public static void Anagram(int n)
 	{
+		int num=n;
 		int rev=0;
 		while(n>0)
 		{
 			int temp=n%10;
-			rev=rev+temp;
+			rev=rev*10+temp;
+			n=n/10;
+			
 		}
-		if(n==rev)
+		if(num==rev)
 		{
 			System.out.println("Is an anagram");
 		}
