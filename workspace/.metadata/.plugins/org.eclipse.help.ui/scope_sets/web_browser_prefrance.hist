@@ -1,0 +1,6 @@
+#Sat Nov 16 12:53:04 IST 2019
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=web browser prefrance

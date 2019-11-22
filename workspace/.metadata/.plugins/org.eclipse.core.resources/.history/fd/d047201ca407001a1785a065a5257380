@@ -1,0 +1,17 @@
+package com.bridgelabz.algorithemProgram;
+import com.bridgelabz.Utility.MyPrograms;
+import com.bridgelabz.Utility.myscanner;
+
+
+public class PermuteofString 
+{
+	public static void main(String[] args)
+	{
+		String s1 = myscanner.readString();
+		int index=0;
+		int length=s1.length();
+		MyPrograms.permute(s1,index,length);
+	
+	}
+
+}

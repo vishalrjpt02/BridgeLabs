@@ -1,0 +1,20 @@
+package com.bridgelabz.junittesting;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.bridgelabz.Utility.MyPrograms;
+
+
+public class SumofdigitTest 
+{
+	@Test
+	public void testsum()
+	{
+		int arr[]={0,0,0,0,0,0};
+		int result[]=MyPrograms.sumof3digit(arr);
+		int out[]={1,2,-3};
+		Assert.assertArrayEquals(out,result);
+	}
+	
+}

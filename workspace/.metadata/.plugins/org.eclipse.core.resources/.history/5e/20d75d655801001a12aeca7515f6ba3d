@@ -1,0 +1,27 @@
+/*
+ */
+
+package junitTesting;
+import java.io.*;
+import java.util.*;
+public class Test06 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		toBinary(num);
+	}
+	public static void toBinary(int n)
+	{
+		long sum=0;
+	
+		while(n>0)
+		{
+			int rem=n%10;
+			
+		}
+	}
+
+}

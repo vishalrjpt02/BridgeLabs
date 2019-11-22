@@ -1,0 +1,34 @@
+package Utility;
+
+public class MyPrograms 
+{
+	
+	public static String ReplaceString() 
+	{
+		System.out.println("enter your whole text");
+		String s1=utility.readLine();
+		System.out.println("enter the string want to remove");
+		String s2=utility.readLine();
+		System.out.println("enter the string want to add");
+		String s3=utility.readLine();
+		String out="";
+		for(String s:s1.split("\\s"))
+		{
+			if(s.equals(s2))
+			{
+				s=s3;
+				out=out+s+" ";
+				
+			}
+			else
+			out=out+s+" ";
+		}
+		return out;
+	}
+	
+	
+	
+	
+	
+	
+}

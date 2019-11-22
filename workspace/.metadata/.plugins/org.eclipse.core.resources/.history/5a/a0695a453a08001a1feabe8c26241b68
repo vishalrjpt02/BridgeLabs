@@ -1,0 +1,44 @@
+package com.bridgelabz.algorithemProgram;
+import com.bridgelabz.Utility.myscanner;
+import java.util.ArrayList;
+public class BinarySearchforWord
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayList<String> arr[]=new ArrayList<String>(10);
+		for(int i=0;i<10;i++)
+		{
+			arr[i]=myscanner.readLine();
+		}
+		
+		System.out.println("enter the element to search");
+		String key=myscanner.readString();
+		int l=0,h=arr.length-1;
+		binarySearch(arr,key,l,h);
+	}
+	
+	public static void binarySearch(String ar[],String k,int low,int high)
+	{
+		if(high>=low)
+		{
+		int mid=low+(high-low)/2;
+		
+		if(k==ar[mid])
+		{
+			System.out.println("Element found Index is " +mid);
+		}
+		else if(ar[mid].compareTo(k)>0)
+		{
+			low=mid+1;
+			binarySearch(ar,k,low,high);
+		}
+		else if(k.compareTo(ar[mid])<0)
+		{
+			high=mid-1;
+			binarySearch(ar,k,low,high);        
+		}
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.bridgelabz.junittesting;
+
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+import com.bridgelabz.junitTesting.DayOfWeek;
+
+
+public class Dayoftheweektest 
+{
+	@Test
+	public void daytest()
+	{
+		String result=DayOfWeek.Dayoftheweek(18,2,1995);
+		Assert.assertEquals("saturday",result);
+	}
+	
+}

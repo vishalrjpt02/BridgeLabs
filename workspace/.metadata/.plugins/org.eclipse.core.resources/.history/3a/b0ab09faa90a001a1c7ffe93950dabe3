@@ -1,0 +1,12 @@
+package com.bridgelabz.junittesting;
+
+
+public class Dayoftheweek 
+{
+	@Test
+	public void daytest()
+	{
+		DayOfWeek
+	}
+	
+}

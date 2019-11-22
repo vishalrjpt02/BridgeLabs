@@ -1,0 +1,25 @@
+package com.bridgelabz.dataStructurePrograms;
+
+import com.bridgelabz.Utility.MyDeque;
+import com.bridgelabz.Utility.myscanner;
+
+public class PalindromeChecker 
+{
+	public static void main(String[] args) 
+	{
+		String input=myscanner.readLine();
+		pelindromcheck(input);
+	}
+	
+	static void pelindromcheck(String in)
+	{
+		char arr[]=in.toCharArray();
+		String compare="";
+		MyDeque dq=new MyDeque(arr.length);
+		for(int i=arr.length;i>0;i--)
+		{
+			dq.addrear(arr[i]);
+		}
+	}
+
+}

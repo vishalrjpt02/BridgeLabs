@@ -1,0 +1,30 @@
+package com.bridgelabz.dataStructurePrograms;
+import java.io.*;
+import java.util.Scanner;
+
+import com.bridgelabz.Utility.*;
+public class UnOrderedList 
+{
+	public static void main(String[] args) throws IOException
+	{
+		Scanner sc= new Scanner(System.in);
+		String command=sc.next();
+		LinkedList<String> list = new LinkedList<String>();
+		
+		InputStream in=	new FileInputStream("/home/admin1/Desktop/vishal/Sample.txt");
+		InputStreamReader isr = new InputStreamReader(in);
+		
+		BufferedReader br = new BufferedReader(isr);
+		
+		while(br.readLine()!=null)
+		{
+			list.add(br.readLine());
+		}
+		
+		
+		list.addAt(2,command);
+		//list.show();
+		System.out.println(list.Size());
+		//list.show();
+	}
+}

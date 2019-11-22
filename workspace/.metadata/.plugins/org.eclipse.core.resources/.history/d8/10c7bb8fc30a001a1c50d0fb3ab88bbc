@@ -1,0 +1,41 @@
+package com.bridgelabz.Utility;
+
+public class Deque 
+{
+	static final int max=100;
+	
+	int arr[];
+	int size;
+	int front;
+	int rear;
+	
+	public Deque(int size)
+	{
+		
+	}
+	public void addFront(int item)
+	{
+		if(rear==Queue.length)
+		{
+			System.out.println("queue is full");
+		}
+		Queue[rear]=item;
+		rear++;
+		size++;
+	}
+	public void addRear()
+	{
+		
+	}
+	public void isEmpty()
+	{
+		if(front==rear)
+		{
+			System.out.println("Queue is empty");
+		}
+	}
+	public void Size()
+	{
+			
+	}
+}

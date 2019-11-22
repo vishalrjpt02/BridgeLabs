@@ -1,0 +1,14 @@
+package com.bridgelabz.junittesting;
+
+import com.bridgelabz.Utility.MyPrograms;
+
+
+public class SumofdigitTest 
+{
+	@Test
+	public void testsum()
+	{
+		int result=MyPrograms.sumof3digit()
+	}
+	
+}

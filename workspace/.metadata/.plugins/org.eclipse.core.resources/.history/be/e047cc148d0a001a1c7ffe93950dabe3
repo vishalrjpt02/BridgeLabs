@@ -1,0 +1,18 @@
+package junittesting;
+
+import junit.framework.Assert;
+
+import org.junit.Test;
+import org.junit.runners.JUnit4;
+
+
+public class VenMechine 
+{
+	@Test
+	public void VMachineTest
+	{
+		VendingMachine test=new VendingMachine();
+		int result=test.printer(400);
+		Assert.assertEquals(4,result);
+	}
+}

@@ -1,0 +1,12 @@
+package com.bridgelabz.basic;
+
+
+public class StringReplaceTest
+{
+	@Test
+	public void teststring()
+	{
+		junit test=new junit();
+		String result=test.StringReplace(	)
+	}
+}

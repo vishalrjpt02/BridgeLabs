@@ -1,0 +1,53 @@
+/**********************************************************************************
+ * @author   vishal kumar
+ * @version  1.0
+ * @purpose  To check prime number in range and store in a 2d array
+ * @date     22/11/19
+ * @file	 Util.java
+ **********************************************************************************/
+
+package com.bridgelabz.dataStructurePrograms;
+
+import java.util.ArrayList;
+
+import com.bridgelabz.Utility.Util;
+
+public class PrimeNumber2D 
+{
+	public static void main(String []args)
+	{
+		int out[][]=findPrimeIn2D(0,1000);
+		for(int i=0;i<10;i++)
+		{
+			for(int j=0;j<10;j++)
+				//System.out.print(out[i][j]);
+			System.out.println();
+		}
+		
+	}
+	
+	public static int[][] findPrimeIn2D(int start,int end)
+	{
+		
+		int limit=100;
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		for(int i=0;i<10;i++)
+		{
+			start=start+100;
+			end=end+100;
+			al.addAll(Util.CalculatePrime(start, limit));
+			
+			System.out.println(al);
+		}
+		int arr[][]=new int[10][10];
+		for(int i=0;i<10;i++)
+		{
+			for(int j=0;j<10;j++)
+			{
+				arr[j][i]=al.get(j);
+			}
+		}
+		return arr;
+	}
+	
+}

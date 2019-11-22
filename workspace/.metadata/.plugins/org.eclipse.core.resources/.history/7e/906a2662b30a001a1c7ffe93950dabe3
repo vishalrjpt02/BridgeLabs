@@ -1,0 +1,15 @@
+package com.bridgelabz.junittesting;
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+import com.bridgelabz.junitTesting.MonthlyPayment;
+
+public class Payment {
+	@Test
+	public static void testpayment() {
+		double result = MonthlyPayment.Payment(23000, 2, 10);
+		double delta=0.01111;
+		assertEquals(1061.3333057628827, result,delta);
+	}
+
+}

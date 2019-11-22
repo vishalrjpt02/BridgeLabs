@@ -1,0 +1,90 @@
+/**********************************************************************************
+ * @author   Vishal kumar
+ * @version  1.0
+ * @purpose  To perform merg sort
+ * @date     21/11/19
+ * @file	 MergSort.java
+ **********************************************************************************/
+package com.bridgelabz.algorithemProgram;
+import java.util.Scanner;
+public class MergSort 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[6];
+		for(int i=0;i<6;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+
+		sort(arr,0,arr.length-1);
+		print(arr);
+	}
+	
+	public static void mergsort(int ar[],int left,int mid,int right)
+	{
+		int n1=mid-left+1,n2=right-mid;
+		int l[]=new int[n1];
+		int r[]=new int[n2];
+		for(int i=0;i<n1;i++)
+		{
+			l[i]=ar[n1];	
+		}
+		for(int j=0;j<n2;j++)
+		{
+			r[j]=ar[mid+1+j];
+		}
+		
+		int i=0,j=0;
+		
+		int k=left;
+		
+		while(i<n1 && j<n2)
+		{
+			if (l[i] <= r[j]) 
+            { 
+                ar[k]=l[i]; 
+                i++; 
+            } 
+            else
+            { 
+                ar[k] = r[j]; 
+                j++; 
+            } 
+            k++; 
+		}
+		while(i<n1)
+		{
+			ar[k] = l[i]; 
+            i++; 
+            k++;
+		}
+		while(i<n2)
+		{
+			ar[k]=r[j];
+			j++;
+			k++;
+		}
+		
+		
+	}
+	static void sort(int arr[], int l, int r) 
+    { 
+        if (l < r) 
+        { 
+            int m = (l+r)/2;  
+            sort(arr, l, m); 
+            sort(arr , m+1, r); 
+   
+            mergsort(arr, l, m, r); 
+            
+        } 
+    }
+	static void print(int ar[])
+	{
+		for(int i=0;i<ar.length;i++)
+		System.out.println(ar[i]);
+	}
+
+}
