@@ -1,3 +1,13 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to unordered list
+ * @date     19-11-19
+ * @file     unordered List
+ *************************************************************************************/
+
+
+
 package com.bridgelabz.datastructureprograms;
 
 
@@ -23,15 +33,17 @@ public class UnOrderedList
 		checkfile(command);
 	}
 	
+	
+	
 	public static void checkfile(String s)
 	{
 		
 		String in="";
 		try
 		{
-		String fileName = "/home/admin1/Desktop/vishal/Sample.txt";
-		File file = new File(fileName);
-		FileReader fr = new FileReader(file);
+		//String fileName = ;
+		//File file = new File(fileName);
+		FileReader fr = new FileReader("/home/admin1/Desktop/vishal/Sample.txt");
 		BufferedReader br = new BufferedReader(fr);
 		String line;
 		while((line = br.readLine()) != null)
@@ -40,6 +52,7 @@ public class UnOrderedList
 		    	in=in+line;
 		    	
 			}
+		fr.close();
 		}
 		catch (Exception e)
 		{
@@ -60,20 +73,20 @@ public class UnOrderedList
 		
 		if(list.contains(s))
 		{
-			list.remove(s);
-			
+			list.removeit(s);
+//			list.show();
 		}
 		else
 		{
 			list.add(s);
 		}
 		
-		//list.show();
+		
 		String ar[]=list.getElement();
 		
 	   try {
 	         FileWriter fs =new FileWriter("/home/admin1/Desktop/vishal/Sample2.txt");
-	          for(int i=0;i<ar.length-1;i++)
+	          for(int i=0;i<ar.length;i++)
 	          {
 	        	 fs.write((String)ar[i] +" ");
 	        	 //System.out.println("yes");
