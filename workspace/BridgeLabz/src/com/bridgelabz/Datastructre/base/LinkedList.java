@@ -1,3 +1,12 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to implement linked list
+ * @date     19-11-19
+ * @file     Linked List
+ *************************************************************************************/
+
+
 package com.bridgelabz.Datastructre.base;
 
 public class LinkedList<T>
@@ -82,6 +91,22 @@ public class LinkedList<T>
 		}
 		
 		
+		public void remove(T data)
+		{
+			Node n = head;
+			Node n1=null;
+			while (n.next != null) 
+			{
+				if (n.data.equals(data))
+				{
+					n=n.next;
+				}
+				n1=n.next;
+				n = n.next;
+				n1=null;
+			}
+		}
+		
 		
 		public void show()
 		{
@@ -89,14 +114,29 @@ public class LinkedList<T>
 			
 			while(node.next!=null)
 			{
-				//System.out.print(node.data +" ");
 				node = node.next;
+				System.out.print(node.data +" ");
 			}
-			System.out.print(node.data +" ");
+			
+		}
+		
+		public String[] getElement()
+		{
+			String []arr=new String[size];
+			Node node = head;
+			int i=0;
+			while(node.next!=null)
+			{
+				node = node.next;
+				arr[i]=(String)node.data;
+				//System.out.print((String)node.data +" ");
+				i++;
+			}
+			return arr;
 		}
 		
 		
-		
+		@SuppressWarnings("unchecked")
 		public T pop(int pos) 
 		{
 			int index = 0;
