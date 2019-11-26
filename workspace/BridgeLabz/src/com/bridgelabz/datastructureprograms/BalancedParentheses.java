@@ -9,7 +9,7 @@
 package com.bridgelabz.datastructureprograms;
 
 import com.bridgelabz.Utility.Util;
-import com.bridgelabz.Datastructre.base.stack;
+import com.bridgelabz.datastructreprograms.base.stack;
 public class BalancedParentheses 
 {	
 	public static void main(String[] args) 

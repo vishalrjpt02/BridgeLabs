@@ -9,8 +9,8 @@
 
 package com.bridgelabz.datastructureprograms;
 
-import com.bridgelabz.Datastructre.base.MyDeque;
 import com.bridgelabz.Utility.myscanner;
+import com.bridgelabz.datastructreprograms.base.MyDeque;
 
 public class PalindromeChecker 
 {

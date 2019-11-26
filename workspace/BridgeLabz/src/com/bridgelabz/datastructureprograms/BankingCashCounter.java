@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructureprograms;
-import com.bridgelabz.Datastructre.base.Queue;
 import com.bridgelabz.Utility.Util;
+import com.bridgelabz.datastructreprograms.base.Queue;
 public class BankingCashCounter {
 
 	public static void main(String[] args) 

@@ -19,7 +19,7 @@ import java.io.IOException;
 
 
 import com.bridgelabz.Utility.Util;
-import com.bridgelabz.Datastructre.base.LinkedList;
+import com.bridgelabz.datastructreprograms.base.LinkedList;
 public class UnOrderedList 
 {
 	

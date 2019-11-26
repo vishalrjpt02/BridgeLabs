@@ -10,8 +10,9 @@
 package com.bridgelabz.datastructureprograms;
 import java.io.FileReader;
 import java.io.FileWriter;
-import com.bridgelabz.Datastructre.base.LinkedList;
+
 import com.bridgelabz.Utility.Util;
+import com.bridgelabz.datastructreprograms.base.LinkedList;
 
 
 
