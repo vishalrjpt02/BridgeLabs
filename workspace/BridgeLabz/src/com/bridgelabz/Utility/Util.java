@@ -184,14 +184,9 @@ public class Util
 		{
 			if(year/4==0)
 			{
-				if(year/100!=0)
+				if(year/100!=0 && year/400==0)
 				{
-					if(year/400==0)
-					{
-						out=true;
-					}
-					else
-						out=false;
+					out=true;
 				}
 				else
 					out= false;
@@ -676,9 +671,9 @@ public class Util
 /*****************************Algorithm programs************************************/
 /**************************************************************************************
 
-                *@author Vishal kumar
-                *@purpose To implement Algorithm programs
-
+  @author Vishal kumar
+  @purpose To implement Algorithm programs
+  @date 21-11-19
 ***************************************************************************************/
 	
 	/* To find out permutation of a string
@@ -892,7 +887,7 @@ public class Util
 		return chk;
 	}
 	
-	/*To check primne numbers in a given range
+	/*To check primne numbers in a given range and to anagram
 	 * @param  -integer range
 	 * @return -arraylist of items
 	 */
@@ -910,7 +905,7 @@ public class Util
 				}
 				
 			}
-			if(chk==false && Anagram(i))
+			if(chk==false && Anagram(i) )
 				{
 					al.add(i);
 					
@@ -918,16 +913,18 @@ public class Util
 		}
 		return al;
 	}
+	
 	public static boolean Anagram(int n)
 	{
 		int rev=0;
+		int num=n;
 		while(n>0)
 		{
 			int temp=n%10;
 			rev=rev*10+temp;
 			n=n/10;
 		}
-		if(n==rev)
+		if(num==rev)
 		{
 			return true;
 		}

@@ -1,0 +1,155 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to implement Stack
+ * @date     20-11-19
+ * @file     Stack.java
+ *************************************************************************************/
+
+package com.bridgelabz.datastructreprograms.base;
+ 
+interface StackInterface<T>
+  {
+	void push(T a);
+	T pop();
+	T peek();
+	int size();
+	boolean isEmpty();	
+  }
+
+//@class 	Stack with generic type delcaration
+public  class Stack<T> implements StackInterface<T> 
+{
+	
+	 /*for create a space for a Node in memory
+	 * next will store the address of "Node" type
+	 *data will be information which will retain in Node or stack
+	 */	
+	class Node{
+		Node next;
+		T data;
+		public Node()	{
+			
+	}
+
+		
+	/*
+	 * new node creating with data at that position 	
+	 */
+	public Node(T new_data)	{
+			data=new_data;
+			next=null;
+		}
+	}
+	
+	int size;// size of stack or total node created
+	Node top;//reference for top node or recently created
+	
+	// creating a empty stack using empty constructor
+	
+	public Stack()	{
+		size=0;
+		top=null;
+	}
+	
+	//creating a Stack with Specific type data 
+	//when the class object is created
+	public Stack(T item)	{
+		Node n1=new Node();
+		n1.data=item;
+		n1.next=null;
+	}
+	
+	
+	//push the item means create new node and add it at first
+	// and make it top node
+	public void push(T new_item)	{
+		Node n1=new Node(new_item);
+		n1.next=top;
+		top=n1;
+		size++;
+	}
+	
+	// take the data which is stored in top node
+	//and remove that node and also decrease the size 
+	public T pop()	{
+		size--;
+		T pop_element;
+		pop_element=top.data;
+		top=top.next;
+		return pop_element;
+	}	
+
+	// if the size is zero than 
+	//the following method will return true else false 
+	public boolean isEmpty()	{
+		if(size==0)	{
+			return true;
+		}	else	{
+			return false;
+			}
+	}
+	
+	//return the stack size or total node
+	public int size()	{
+		return size;
+	}
+	
+	// return the top data at top node 
+	public T peek()	{
+		return top.data;
+	}
+  
+
+   
+
+
+
+
+
+  /*To find out that parrenthesis is balance or not
+   * @param  char Array
+   * @return true or false
+   */
+
+   public boolean isBalanced(char exp[]) 
+   { 
+	   Stack<Character> st=new Stack<Character>(); 
+	   for(int i=0;i<exp.length;i++) 
+	   { 
+		   if (exp[i] == '{' || exp[i] == '(' || exp[i] == '[') 
+			   st.push(exp[i]);
+		   
+		   if (exp[i] == '}' || exp[i] == ')' || exp[i] == ']') 
+		   { 
+			   if (st.isEmpty()) 
+			   { 
+				   return false; 
+			   } 
+			   else if ( !isMatchingPair(st.pop(), exp[i]) ) 
+			   { 
+				   return false; 
+			   } 
+		   } 
+        
+	   } 
+	   if (st.isEmpty()) 
+		   return true; /*balanced*/
+	   else
+	   {   /*not balanced*/
+		   return false; 
+	   }  
+   	}  
+   
+   	public boolean isMatchingPair(char character1, char character2) 
+   	{ 
+   		if (character1 == '(' && character2 == ')') 
+   			return true; 
+   		else if (character1 == '{' && character2 == '}') 
+   			return true; 
+   		else if (character1 == '[' && character2 == ']') 
+	   		return true; 
+	   	else
+	   		return false; 
+   }
+}

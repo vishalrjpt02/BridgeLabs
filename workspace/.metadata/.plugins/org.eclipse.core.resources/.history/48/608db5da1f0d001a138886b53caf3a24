@@ -1,0 +1,13 @@
+package com.bridgelabz.dataStructurePrograms;
+
+public class PrimeNumberWithAnagram {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

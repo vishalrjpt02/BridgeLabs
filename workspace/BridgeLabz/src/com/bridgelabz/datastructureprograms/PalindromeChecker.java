@@ -24,7 +24,7 @@ public class PalindromeChecker
  // Function to check the pelindrom using Dequeue
  
 	
-	static void pelindromcheck(String in)
+	public static boolean pelindromcheck(String in)
 	{
 		char arr[]=in.toCharArray();
 		String compare="";
@@ -42,8 +42,10 @@ public class PalindromeChecker
 		if(compare.equals(in))
 		{
 			System.out.println(compare +"  is a pelindrom");
+			return true;
 		}
 		else
 			System.out.println(compare  +"   is not a pelindrom");
+		return false;
 	}
 }

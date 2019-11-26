@@ -1,10 +1,20 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to find prime factor
+ * @date     20-11-19
+ * @file     primefact.java
+ *************************************************************************************/
+
 package com.bridgelabz.basic;
-/*Factors
+\/*Factors
 Desc -> Computes the prime factorization of N using brute force.
 I/P -> Number to find the prime factors
 Logic -> Traverse till i*i <= N instead of i <= N for efficiency.
 O/P -> Print the prime factors of number N.
 */
+package com.bridgelabz.basic;
+
 import java.util.*;
 public class Factors {
 

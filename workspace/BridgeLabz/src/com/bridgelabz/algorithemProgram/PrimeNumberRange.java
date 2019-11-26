@@ -1,3 +1,10 @@
+/**********************************************************************************
+ * @author   Vishal kumar
+ * @version  1.0
+ * @purpose  To check prime number in range of 0 to 1000
+ * @date     22/11/19
+ * @file	 Util.java
+ **********************************************************************************/
 package com.bridgelabz.algorithemProgram;
 import com.bridgelabz.Utility.Util;
 public class PrimeNumberRange 

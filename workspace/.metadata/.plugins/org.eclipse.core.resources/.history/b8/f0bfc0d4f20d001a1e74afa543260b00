@@ -1,0 +1,61 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to show prime number with anagram using stack
+ * @date     23-11-19
+ * @file     PrimeAnagramwithStack.java
+ *************************************************************************************/
+package com.bridgelabz.datastructureprograms;
+
+public class PrimeAnagramWithStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void checkprime(int start, int end)
+	{
+		for(int i=start;i<end;i++)
+		{
+			boolean chk=false;
+			for(int j=i-1;j>1;j--)
+			{
+				if(i%j==0)
+				{
+					chk=true;
+				}
+				
+			}
+			if(chk==false && Anagram(i) )
+				{
+					al.add(i);
+					
+				}
+		}
+		return al;
+	}
+	
+	public static boolean Anagram(int n)
+	{
+		int rev=0;
+		int num=n;
+		while(n>0)
+		{
+			int temp=n%10;
+			rev=rev*10+temp;
+			n=n/10;
+		}
+		if(num==rev)
+		{
+			return true;
+		}
+		else
+			return false;
+	}
+	
+}

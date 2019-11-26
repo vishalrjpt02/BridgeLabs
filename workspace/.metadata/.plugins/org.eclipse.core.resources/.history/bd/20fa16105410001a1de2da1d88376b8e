@@ -1,0 +1,19 @@
+package com.bridgelabz.datastructureprograms.TestCases;
+
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+import com.bridgelabz.datastructureprograms.BalancedParentheses;
+import com.bridgelabz.junitTesting.VendingMachine;
+
+
+public class BalancedParaen 
+{
+	@Test
+	public void givenZero_whenCount_thenShouldBetrue()
+	{
+		
+		Assert.assertEquals(true,BalancedParentheses.checkPara(""));
+	}
+}
