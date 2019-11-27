@@ -1,0 +1,60 @@
+/*************************************************************************************
+ * @author   Vishal kumar
+ * @Version  1.0
+ * @purpose  to unordered list
+ * @date     19-11-19
+ * @file     unordered List
+ *************************************************************************************/
+
+
+package com.bridgelabz.datastructureprograms;
+
+import com.bridgelabz.Utility.Util;
+
+public class NumberOfBST 
+{
+
+		public static void main(String[] args)
+		{
+			
+			System.out.println("Enter the total number of testcases");
+			double testCases = Util.readint();
+			
+			while (testCases > 0) 
+			{
+				System.out.println("Enter total number of nodes");
+				double totalNodes = Util.readint();
+				double totalTree =numberOfBinarySearchTree(totalNodes);
+				System.out.println(totalTree);
+				testCases--;
+			}
+			System.out.println("Ends");
+		}
+	/**
+	 * Finding number of ways nodes can be arranged in a binary search tree via Catalan Numbers
+	 * @param totalNodes
+	 * @return total number of binary search tree that can be made by totalNodes
+	 */
+	public static double numberOfBinarySearchTree(double totalNodes) 
+	{
+		double numerator = factorial(2 * totalNodes);
+		double denominator = (factorial(totalNodes + 1)) * (factorial(totalNodes));
+		double differentTrees = numerator / denominator;
+		return differentTrees;
+	}
+
+	/**
+	 * Calculating the factorial of the given number
+	 * @param i
+	 * @return factorial of the given number
+	 */
+	public static double factorial(double i) 
+	{
+		double fact = 1;
+		while (i > 0) {
+			fact = fact * i;
+			i--;
+		}
+		return fact;
+	}
+}
