@@ -43,7 +43,7 @@ public class UnOrderedList
 		{
 		//String fileName = ;
 		//File file = new File(fileName);
-		FileReader fr = new FileReader("/home/admin1/Desktop/vishal/Sample2.txt");
+		FileReader fr = new FileReader("/home/admin1/Desktop/vishal/Sample.txt");
 		BufferedReader br = new BufferedReader(fr);
 		String line;
 		while((line = br.readLine()) != null)
@@ -67,6 +67,8 @@ public class UnOrderedList
 		for(String read:chk)
 		{
 			list.add(read);
+			System.out.println("Item not found, String added to file");
+			
 		}
 		
 		if(list.contains(s))
@@ -77,7 +79,6 @@ public class UnOrderedList
 		else
 		{
 			list.add(s);
-			System.out.println("Item not found, String added to file");
 		}
 		
 		

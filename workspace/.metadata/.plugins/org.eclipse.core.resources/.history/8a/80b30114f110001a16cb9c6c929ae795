@@ -1,11 +1,3 @@
-/***********************************************************************************
- * @author  - Vishal Kumar
- * @purpose - To check number of iteration to find the number
- * @version - 1.0
- * @date 	- 20-11-2019
- * @FileName- CoupanNumber.java
- ************************************************************************************/
-
 /*
 Desc -> Given N distinct Coupon Numbers, how many random numbers do you need to generate distinct coupon number?
 This program simulates this random process.
@@ -15,15 +7,14 @@ O/P -> total random number needed to have all distinct numbers.
 Functions => Write Class Static Functions to generate random number and to process distinct coupons.
 */
 package com.bridgelabz.logicalprograms;
-
-import com.bridgelabz.Utility.Util;
+import java.util.*;
 public class CouponNumbers 
 {
 
 	public static void main(String[] args)
 	{
-		System.out.println("Enter a number to coupans to be genrated");
-		int num=Util.readint();
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
 		double arr[]=new double[num];
 		int count=0;
 		while(count<=num)
@@ -45,7 +36,11 @@ public class CouponNumbers
 			}
 			
 		}
-		System.out.print("Total number of iteration to find out the coupans is  "+count);
+		System.out.print(count);
+		/*for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}*/
 	}
 
 }

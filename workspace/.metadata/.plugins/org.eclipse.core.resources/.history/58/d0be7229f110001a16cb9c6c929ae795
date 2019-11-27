@@ -22,7 +22,7 @@ public class CouponNumbers
 
 	public static void main(String[] args)
 	{
-		System.out.println("Enter a number to coupans to be genrated");
+		System.out.println("Enter a number to find");
 		int num=Util.readint();
 		double arr[]=new double[num];
 		int count=0;
@@ -45,7 +45,11 @@ public class CouponNumbers
 			}
 			
 		}
-		System.out.print("Total number of iteration to find out the coupans is  "+count);
+		System.out.print("Total number of iteration to find out this number"+count);
+		/*for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}*/
 	}
 
 }

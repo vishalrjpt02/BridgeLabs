@@ -3,7 +3,7 @@
  * @Version  1.0
  * @purpose  to implement ordered list
  * @date     19-11-19
- * @file     ordered List
+ * @file     unordered List
  *************************************************************************************/
 
 
@@ -35,12 +35,13 @@ public class OrderedList
 			while((i=fr.read())!=-1)
 			{
 				ar[j]=((Integer)fr.read());
+				i++;
 				//System.out.println(ar[j]);
 				j++;
 			}
 			fr.close();
 			Util.BubbleSort(ar);
-			for(int l=0;l<j;l++)
+			for(int l=0;l<i;l++)
 				System.out.println(ar[l]);
 			
 			FileWriter fw=new FileWriter("/home/admin1/Desktop/vishal/Sample2.txt");

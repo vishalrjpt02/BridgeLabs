@@ -3,7 +3,7 @@
  * @Version  1.0
  * @purpose  to implement ordered list
  * @date     19-11-19
- * @file     ordered List
+ * @file     unordered List
  *************************************************************************************/
 
 
@@ -35,6 +35,7 @@ public class OrderedList
 			while((i=fr.read())!=-1)
 			{
 				ar[j]=((Integer)fr.read());
+				l++;
 				//System.out.println(ar[j]);
 				j++;
 			}

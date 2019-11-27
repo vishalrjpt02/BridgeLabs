@@ -668,8 +668,8 @@ public class Util
 	}
 	
 	
-
-/******************************Algorithm programs****************************************
+/*****************************Algorithm programs************************************/
+/**************************************************************************************
 
   @author Vishal kumar
   @purpose To implement Algorithm programs
@@ -769,7 +769,7 @@ public class Util
 	 * @param  integer Array
 	 * @return integer Array
 	 */
-	public static int[] BubbleSort(int arr[])
+	public static void BubbleSort(int arr[])
 	{
 		int temp=0;
 		for(int i=0;i<arr.length;i++)
@@ -784,9 +784,8 @@ public class Util
 				}
 			}
 		}
-		/*for(int i=0;i<arr.length;i++)
-		System.out.print(arr[i] +"  ");*/
-		return arr;
+		for(int i=0;i<arr.length;i++)
+		System.out.print(arr[i] +"  ");
 	}
 	
 	
