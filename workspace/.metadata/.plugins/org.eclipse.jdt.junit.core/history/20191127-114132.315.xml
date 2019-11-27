@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Pelindrom.given6char_whencheck_ShouldBefalse" project="BridgeLabz" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="given6char_whencheck_ShouldBefalse" classname="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.005"/>
+</testrun>

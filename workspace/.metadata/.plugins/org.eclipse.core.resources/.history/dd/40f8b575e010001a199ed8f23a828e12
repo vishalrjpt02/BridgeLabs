@@ -1,0 +1,16 @@
+package com.bridgelabz.Testing;
+//import static org.junit.Assert.*;
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+import com.bridgelabz.junitTesting.MonthlyPayment;
+
+public class Payment {
+	@Test
+	public void testpayment() {
+		int result = MonthlyPayment.Payment(23000, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+
+}

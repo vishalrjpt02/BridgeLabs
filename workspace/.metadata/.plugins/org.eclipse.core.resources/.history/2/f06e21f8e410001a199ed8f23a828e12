@@ -1,0 +1,44 @@
+package com.bridgelabz.junitTesting.TestCases;
+//import static org.junit.Assert.*;
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+import com.bridgelabz.junitTesting.MonthlyPayment;
+
+public class Payment {
+	
+	@Test
+	public void givenZero_WhenpaymentShouldbe_Zero() {
+		int result = MonthlyPayment.findPayment(0, 0, 0);
+		Assert.assertEquals(0,result);
+	}
+	
+	@Test
+	public void givenOne_WhenpaymentShouldbe_one() {
+		int result = MonthlyPayment.findPayment(1, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+	
+	@Test
+	public void given23_WhenpaymentShouldbe_() {
+		int result = MonthlyPayment.findPayment(23, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+	
+	@Test
+	public void given230_WhenpaymentShouldbe_() {
+		int result = MonthlyPayment.findPayment(230, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+	@Test
+	public void given2300_WhenpaymentShouldbe_() {
+		int result = MonthlyPayment.findPayment(23000, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+	@Test
+	public void given23000_WhenpaymentShouldbe_() {
+		int result = MonthlyPayment.findPayment(23000, 2, 10);
+		Assert.assertEquals(1061,result);
+	}
+}

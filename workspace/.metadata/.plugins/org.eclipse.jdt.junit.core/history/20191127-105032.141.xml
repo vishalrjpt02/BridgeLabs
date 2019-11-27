@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Pelindrom" project="BridgeLabz" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.017">
+    <testcase name="givenOnechar_whencheck_ShouldBetrue" classname="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.009"/>
+    <testcase name="given15char_whencheck_ShouldBetrue" classname="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.006"/>
+    <testcase name="givenThreechar_whencheck_ShouldBetrue" classname="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.001"/>
+    <testcase name="giventwochar_whencheck_ShouldBetrue" classname="com.bridgelabz.datastructureprograms.TestCases.Pelindrom" time="0.001"/>
+  </testsuite>
+</testrun>

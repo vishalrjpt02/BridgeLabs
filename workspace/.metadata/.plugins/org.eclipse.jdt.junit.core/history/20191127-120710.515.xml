@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BinaryTodecimalTest" project="BridgeLabz" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.003">
+    <testcase name="givenHundred_whentoBinary_ShouldBeSeventy" classname="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.0"/>
+    <testcase name="given100000_whentoBinary_ShouldBe82310" classname="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.0"/>
+    <testcase name="givenOne_whentoBinary_ShouldBeZero" classname="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.001"/>
+    <testcase name="given0_whentoBinary_ShouldBeZero" classname="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.0"/>
+    <testcase name="givenfifty_whentoBinary_ShouldBeThirtyEight" classname="com.bridgelabz.junitTesting.TestCases.BinaryTodecimalTest" time="0.002"/>
+  </testsuite>
+</testrun>

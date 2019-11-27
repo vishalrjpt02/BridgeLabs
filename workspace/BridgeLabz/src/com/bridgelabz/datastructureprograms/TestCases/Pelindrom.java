@@ -27,7 +27,13 @@ public class Pelindrom
 	public void givenThreechar_whencheck_ShouldBetrue()
 	{
 		
-		Assert.assertEquals(true, PalindromeChecker.pelindromcheck("VIV "));
+		Assert.assertEquals(true, PalindromeChecker.pelindromcheck("VIV"));
+	}
+	@Test
+	public void given6char_whencheck_ShouldBefalse()
+	{
+		
+		Assert.assertEquals(false, PalindromeChecker.pelindromcheck("Vishal"));
 	}
 	@Test
 	public void given15char_whencheck_ShouldBetrue()
@@ -35,4 +41,5 @@ public class Pelindrom
 		
 		Assert.assertEquals(true, PalindromeChecker.pelindromcheck("VishalKumaramuklahsiv"));
 	}
+	
 }

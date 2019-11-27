@@ -14,10 +14,10 @@ public class MonthlyPayment
 		double p=sc.nextDouble();
 		int y=sc.nextInt();
 		double r=sc.nextDouble();
-		System.out.println(Payment(p,y,r));
+		findPayment(p,y,r);
 	}
 	
-	public static int Payment(double p,int y,double r)
+	public static int findPayment(double p,int y,double r)
 	{
 		int pay=0;
 		int n=12*y;

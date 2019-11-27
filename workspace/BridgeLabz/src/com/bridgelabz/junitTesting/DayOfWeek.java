@@ -22,6 +22,10 @@ public class DayOfWeek
 	
 	public static String Dayoftheweek(int d,int m,int y)
 	{
+		if(d<1||m<1||y<1000)
+			{
+				return "Invalid Input";
+			}
 		y=y-(14-m)/12;
 		int x=0;
 		x = y+ y/4-y/100 + y/400;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Dayoftheweektest" project="BridgeLabz" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bridgelabz.junitTesting.TestCases.Dayoftheweektest" time="0.005">
+    <testcase name="givenZero_dayoftheweekShouldbe_InvalidInput" classname="com.bridgelabz.junitTesting.TestCases.Dayoftheweektest" time="0.004"/>
+    <testcase name="given19_11_2019_dayoftheweekShouldbe_tuesday" classname="com.bridgelabz.junitTesting.TestCases.Dayoftheweektest" time="0.001"/>
+  </testsuite>
+</testrun>
