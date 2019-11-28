@@ -12,7 +12,7 @@ import com.bridgelabz.Utility.Util;
 import com.bridgelabz.datastructreprograms.base.Stack;;
 public class BalancedParentheses 
 {	
-	static Stack st=new Stack();
+	static Stack checkExpression=new Stack();
 	public static void main(String[] args) 
 	{
 		String in =Util.readline();
@@ -22,7 +22,7 @@ public class BalancedParentheses
 	public static boolean checkPara(String s)
 	{
 		char exp[]=s.toCharArray();
-        if (st.isBalanced(exp))
+        if (checkExpression.isBalanced(exp))
           return true; 
         else
         	return false;
