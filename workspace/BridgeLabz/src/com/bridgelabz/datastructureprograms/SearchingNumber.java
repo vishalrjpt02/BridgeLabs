@@ -3,7 +3,7 @@
  * @author  - Vishal Kumar
  * @version - 1.0
  * @date 	- 20-11-2019
- * @FileName- Pelindromchecker.java
+ * @FileName- SearchingNuber.java
  ************************************************************************************/
 package com.bridgelabz.datastructureprograms;
 import java.io.File;

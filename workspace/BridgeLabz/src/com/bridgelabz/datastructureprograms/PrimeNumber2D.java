@@ -17,17 +17,18 @@ public class PrimeNumber2D
 	public static void main(String []args)
 	{
 		int start=0,end=100;
-		ArrayList<ArrayList<Integer>> al=findPrimeIn2D(0,1000);
+		ArrayList<ArrayList<Integer>> numbers=findPrimeIn2D(0,1000);
 		System.out.println("printing the list of prime numbers in range of 0 to 1000");
 		for(int i=0;i<10;i++)
 		{
 			System.out.print(start +" to " +end +"  ");
-			System.out.println(al.get(i));
+			System.out.println(numbers.get(i));
 			start=start+100;end=end+100;
 		}
 		
 		
 	}
+	
 	/* Method  to find out prime number in 0 to 1000
 	 * @param  int,int
 	 * @return Two dimational Arraylist

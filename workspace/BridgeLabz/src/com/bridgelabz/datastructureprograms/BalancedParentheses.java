@@ -9,16 +9,17 @@
 package com.bridgelabz.datastructureprograms;
 
 import com.bridgelabz.Utility.Util;
-import com.bridgelabz.datastructreprograms.base.Stack;;
+import com.bridgelabz.datastructreprograms.base.Stack;
 public class BalancedParentheses 
 {	
 	static Stack checkExpression=new Stack();
 	public static void main(String[] args) 
 	{
-		String in =Util.readline();
-		if(checkPara(in))
+		String userInput =Util.readline();
+		if(checkPara(userInput))
 			System.out.println("it is balanced");;
 	}
+	
 	public static boolean checkPara(String s)
 	{
 		char exp[]=s.toCharArray();

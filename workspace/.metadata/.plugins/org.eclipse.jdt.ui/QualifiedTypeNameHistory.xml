@@ -33,7 +33,8 @@
 <fullyQualifiedTypeName name="com.bridgelabz.datastructreprograms.base.Stack"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-<fullyQualifiedTypeName name="com.bridgelabz.Utility.Util"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.BalancedParentheses"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.PalindromeChecker"/>
+<fullyQualifiedTypeName name="com.bridgelabz.datastructreprograms.base.OrderedList"/>
+<fullyQualifiedTypeName name="com.bridgelabz.Utility.Util"/>
 </qualifiedTypeNameHistroy>

@@ -6,13 +6,10 @@
  * @file     unordered List
  *************************************************************************************/
 
-
-
 package com.bridgelabz.datastructureprograms;
 
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,12 +24,15 @@ public class UnOrderedList
 	
 	public static void main(String[] args)
 	{
-		System.out.println("Enter the string you want to add or remove");
+		System.out.println("Enter the number you want to add or remove");
 		String command=Util.readline();
 		
 		checkfile(command);
 	}
-	
+	/*function to check that file is present or not
+	 * @param  input String
+	 * @return noting 
+	 */
 	
 	
 	public static void checkfile(String s)
@@ -41,16 +41,13 @@ public class UnOrderedList
 		String in="";
 		try
 		{
-		//String fileName = ;
-		//File file = new File(fileName);
+		
 		FileReader fr = new FileReader("/home/admin1/Desktop/vishal/Sample2.txt");
 		BufferedReader br = new BufferedReader(fr);
 		String line;
 		while((line = br.readLine()) != null)
 			{
-		    	//process the line
-		    	in=in+line;
-		    	
+		    	in=in+line; 	
 			}
 		fr.close();
 		}

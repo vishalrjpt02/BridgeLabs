@@ -1,3 +1,11 @@
+/**********************************************************************************
+ * @author   Vishal kumar
+ * @version  1.0
+ * @purpose  To check prime number in range and store in a 2d array
+ * @date     22/11/19
+ * @file	 PrimeNumberWithAnagram.java
+ **********************************************************************************/
+
 package com.bridgelabz.datastructureprograms;
 
 import java.util.ArrayList;

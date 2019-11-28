@@ -8,13 +8,7 @@
 
 
 package com.bridgelabz.datastructureprograms;
-/********************************************************************************************
- * Purpose : reading a file and searching the word
- * @author :Rahul C H
- * @version:1.0
- * @date   :21-11-2019
- * @Filename:OrderedListMain.java
- ********************************************************************************************/
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,40 +24,40 @@ public class OrderedListRunner
 	 * @throws and throws a  IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		OrderedList<Integer> nw = new OrderedList<Integer>();
+		OrderedList<Integer> elememts = new OrderedList<Integer>();
 		try {
-		FileReader file = new FileReader("/home/admin1/Desktop/vishal/Sample2.txt");
+		FileReader inputfile = new FileReader("/home/admin1/Desktop/vishal/Sample2.txt");
 		int i =0;
 		String stringElement = "";
-		while((i=file.read())!=-1) {
+		while((i=inputfile.read())!=-1) {
 			stringElement = stringElement+(char) i ;
 		}
 		System.out.println(stringElement);
-		String arrr[] = stringElement.split(" ");
-		int arr[] = new int[arrr.length];
-		 for(int j = 0 ; j<arrr.length;j++) 
-			 arr[j] = Integer.parseInt(arrr[j]);
+		String Words[] = stringElement.split(" ");
+		int numbers[] = new int[Words.length];
+		 for(int j = 0 ; j<Words.length;j++) 
+			 numbers[j] = Integer.parseInt(Words[j]);
 			
-		 for(int k : arr) {
-			nw.add(k);
+		 for(int k : numbers) {
+			elememts.add(k);
 		 }
 		 System.out.println("Enter the number to search");
-		int num = Util.readint();
-		if(nw.search(num)) {
-			System.out.println("removed: "+ num);
-		nw.remove(num);
+		int number = Util.readint();
+		if(elememts.search(number)) {
+			System.out.println("removed: "+ number);
+		elememts.remove(number);
 		}else {
-			System.out.println("added: "+ num);
-			nw.add(num);
+			System.out.println("added: "+ number);
+			elememts.add(number);
 		}
-		FileWriter filee  = new FileWriter("/home/admin1/Desktop/vishal/Sample2.txt");
-		int size = nw.size();
-		nw.disp();
+		FileWriter writingelements  = new FileWriter("/home/admin1/Desktop/vishal/Sample2.txt");
+		int size = elememts.size();
+		elememts.disp();
 		for(int o = 0 ; o<=size ; o++) 
 		{
-			filee.write(nw.pop(0)+" ");
+			writingelements.write(elememts.pop(0)+" ");
 		}
-		filee.close();
+		writingelements.close();
 		}
 		catch(Exception e) 
 		{

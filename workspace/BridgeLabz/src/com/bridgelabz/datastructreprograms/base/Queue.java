@@ -54,22 +54,23 @@ public class Queue {
 	
 	public int Balance(String trans[])
 	{
-		int balance=0;
+		int balance=10000;
 		for(int i=0;i<=size;i++)
 		{
 			if(trans[i].equalsIgnoreCase("dep"))
 			{
 				balance=balance+Queue[i];
 			}
-			else if(trans[i].equalsIgnoreCase(""))
+			else if(trans[i].equalsIgnoreCase("wid"))
 			{
-				if(balance>=0)
+				if(balance>0)
 				balance=balance-Queue[i];
-				else
-					System.out.println("sorry we don't have enough cash");
+				
 			}
 		Dequeue();	
 		}
+		if(balance<0)
+			System.out.println("sorry we don't have enough cash");
 		return balance;
 	}
 }

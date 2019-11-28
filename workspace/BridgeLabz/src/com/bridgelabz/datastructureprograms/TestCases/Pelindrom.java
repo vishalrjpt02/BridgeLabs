@@ -39,7 +39,7 @@ public class Pelindrom
 	public void given15char_whencheck_ShouldBetrue()
 	{
 		
-		Assert.assertEquals(true, PalindromeChecker.pelindromcheck("VishalKumaramuklahsiv"));
+		Assert.assertEquals(false, PalindromeChecker.pelindromcheck("VishalKumaramuklahsi"));
 	}
 	
 }

@@ -28,16 +28,16 @@ public class PrimeAnagramWithStack {
 	{
 		for(int i=start;i<end;i++)
 		{
-			boolean chk=false;
+			boolean checking=false;
 			for(int j=i-1;j>1;j--)
 			{
 				if(i%j==0)
 				{
-					chk=true;
+					checking=true;
 				}
 				
 			}
-			if(chk==false && Anagram(i) )
+			if(checking==false && Anagram(i) )
 				{
 						list.add(i);
 				}
@@ -47,15 +47,15 @@ public class PrimeAnagramWithStack {
 	}
 	public static boolean Anagram(int n)
 	{
-		int rev=0;
-		int num=n;
+		int reverse=0;
+		int number=n;
 		while(n>0)
 		{
 			int temp=n%10;
-			rev=rev*10+temp;
+			reverse=reverse*10+temp;
 			n=n/10;
 		}
-		if(num==rev)
+		if(number==reverse)
 		{
 			return true;
 		}
