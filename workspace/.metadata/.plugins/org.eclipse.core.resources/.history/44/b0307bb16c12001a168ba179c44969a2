@@ -1,0 +1,5 @@
+package com.blbz.services;
+
+public interface InventoryInterface {
+
+}

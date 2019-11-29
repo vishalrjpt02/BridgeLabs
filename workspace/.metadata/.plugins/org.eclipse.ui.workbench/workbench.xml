@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="558" maximized="true" width="626" x="362" y="228">
 <fastViewData fastViewLocation="1024">
@@ -20,10 +20,12 @@
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -38,41 +40,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OrderedListRunner.java" partName="OrderedListRunner.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/OrderedListRunner.java" title="OrderedListRunner.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/OrderedListRunner.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/OrderedListRunner.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="353" selectionTopPixel="273"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" partName="Util.java" path="/home/admin1/workspace/JsonInventory/src/com/blbz/utility/Util.java" title="Util.java" tooltip="JsonInventory/src/com/blbz/utility/Util.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JsonInventory/src/com/blbz/utility/Util.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="732" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PalindromeChecker.java" partName="PalindromeChecker.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/PalindromeChecker.java" title="PalindromeChecker.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/PalindromeChecker.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PalindromeChecker.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="85" selectionTopPixel="110"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryInterface.java" partName="InventoryInterface.java" path="/home/admin1/workspace/JsonInventory/src/com/blbz/services/InventoryInterface.java" title="InventoryInterface.java" tooltip="JsonInventory/src/com/blbz/services/InventoryInterface.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JsonInventory/src/com/blbz/services/InventoryInterface.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="162" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrimeAnagramWithStack.java" partName="PrimeAnagramWithStack.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeAnagramWithStack.java" title="PrimeAnagramWithStack.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeAnagramWithStack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeAnagramWithStack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="908" selectionTopPixel="330"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrimeNumber2D.java" partName="PrimeNumber2D.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumber2D.java" title="PrimeNumber2D.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumber2D.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumber2D.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="331" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrimeNumberWithAnagram.java" partName="PrimeNumberWithAnagram.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumberWithAnagram.java" title="PrimeNumberWithAnagram.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumberWithAnagram.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumberWithAnagram.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="249" selectionTopPixel="155"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SearchingNumber.java" partName="SearchingNumber.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/SearchingNumber.java" title="SearchingNumber.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/SearchingNumber.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/SearchingNumber.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="242" selectionTopPixel="395"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UnOrderedList.java" partName="UnOrderedList.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java" title="UnOrderedList.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="618" selectionTopPixel="153"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Gambler.java" partName="Gambler.java" path="/home/admin1/workspace/BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java" title="Gambler.java" tooltip="BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1171" selectionTopPixel="95"/>
 </editor>
 </editors>
 <views>
@@ -159,7 +141,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -444,7 +426,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@793f2b41" ratio="0.80516607" ratioLeft="1091" ratioRight="264" relationship="2" relative="left">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@793f2b41" ratio="0.79630995" ratioLeft="1079" ratioRight="276" relationship="2" relative="left">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -494,168 +476,167 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/TestCases/BalancedParaen.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/BalancedParentheses.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/BankingCashCounter.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/Calendar.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructreprograms/base/Queue.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/NumberOfBST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/OrderedListRunner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PalindromeChecker.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeAnagramWithStack.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumber2D.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumberWithAnagram.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/SearchingNumber.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/PrimeNumberWithAnagram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonInventory/src/com/blbz/Classmodel/InventryDetails.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonInventory/src/utility/Util.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonInventory/src/com/blbz/utility/Util.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonInventory/src/com/blbz/services/InventoryInterface.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java"/>
+<editor element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="json-simple-1.1-sources.jar"/>
+<editor element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="json-simple-1.1.jar"/>
+<editor element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="pom.xml"/>
 </editors>
-<item historyLabel="BalancedParentheses.java" index="1">
-<position info="not_deleted" x="502" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="307" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="366" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="366" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="770" y="0"/>
-</item>
-<item historyLabel="Queue.java" index="4">
-<position info="not_deleted" x="864" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="337" y="0"/>
-</item>
-<item historyLabel="BalancedParentheses.java" index="1">
-<position info="not_deleted" x="502" y="0"/>
-</item>
-<item historyLabel="Queue.java" index="4">
-<position info="not_deleted" x="864" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="337" y="0"/>
-</item>
-<item historyLabel="Queue.java" index="4">
-<position info="not_deleted" x="864" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="Queue.java" index="4">
-<position info="not_deleted" x="899" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="Calendar.java" index="3">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="Calendar.java" index="3">
-<position info="not_deleted" x="1802" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="BalancedParentheses.java" index="1">
-<position info="not_deleted" x="502" y="0"/>
-</item>
-<item historyLabel="BankingCashCounter.java" index="2">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="Calendar.java" index="3">
-<position info="not_deleted" x="1802" y="0"/>
-</item>
-<item historyLabel="Queue.java" index="4">
-<position info="not_deleted" x="899" y="0"/>
-</item>
-<item historyLabel="BalancedParaen.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="NumberOfBST.java" index="5">
-<position info="not_deleted" x="300" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="787" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="848" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="918" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="944" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1172" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1086" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1130" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1363" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1121" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="1594" y="0"/>
-</item>
-<item historyLabel="OrderedListRunner.java" index="6">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="PalindromeChecker.java" index="7">
-<position info="not_deleted" x="85" y="0"/>
-</item>
-<item historyLabel="PrimeAnagramWithStack.java" index="8">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="PrimeAnagramWithStack.java" index="8">
-<position info="not_deleted" x="928" y="0"/>
-</item>
-<item historyLabel="PrimeAnagramWithStack.java" index="8">
+<item historyLabel="PrimeAnagramWithStack.java" index="0">
 <position info="not_deleted" x="908" y="0"/>
 </item>
-<item historyLabel="PrimeNumber2D.java" index="9">
+<item historyLabel="PrimeNumber2D.java" index="1">
 <position info="not_deleted" x="84" y="0"/>
 </item>
-<item historyLabel="PrimeNumber2D.java" index="9">
+<item historyLabel="PrimeNumber2D.java" index="1">
 <position info="not_deleted" x="846" y="0"/>
 </item>
-<item historyLabel="PrimeNumberWithAnagram.java" index="10">
+<item historyLabel="PrimeNumberWithAnagram.java" index="2">
 <position info="not_deleted" x="341" y="0"/>
 </item>
-<item historyLabel="PrimeNumber2D.java" index="9">
+<item historyLabel="PrimeNumber2D.java" index="1">
 <position info="not_deleted" x="331" y="0"/>
 </item>
-<item historyLabel="PrimeNumberWithAnagram.java" index="10">
+<item historyLabel="PrimeNumberWithAnagram.java" index="2">
 <position info="not_deleted" x="249" y="0"/>
 </item>
-<item historyLabel="PrimeNumber2D.java" index="9">
+<item historyLabel="PrimeNumber2D.java" index="1">
 <position info="not_deleted" x="331" y="0"/>
 </item>
-<item historyLabel="PrimeNumberWithAnagram.java" index="10">
+<item historyLabel="PrimeNumberWithAnagram.java" index="2">
 <position info="not_deleted" x="249" y="0"/>
 </item>
-<item historyLabel="SearchingNumber.java" index="11">
+<item historyLabel="SearchingNumber.java" index="3">
 <position info="not_deleted" x="242" y="0"/>
 </item>
-<item historyLabel="UnOrderedList.java" index="12">
+<item historyLabel="UnOrderedList.java" index="4">
 <position info="not_deleted" x="87" y="0"/>
 </item>
-<item active="true" historyLabel="UnOrderedList.java" index="12">
+<item historyLabel="UnOrderedList.java" index="4">
+<position info="not_deleted" x="618" y="4"/>
+</item>
+<item historyLabel="PrimeNumberWithAnagram.java" index="5">
+<position info="not_deleted" x="84" y="0"/>
+</item>
+<item historyLabel="PrimeNumberWithAnagram.java" index="5">
+<position info="not_deleted" x="249" y="0"/>
+</item>
+<item historyLabel="UnOrderedList.java" index="4">
+<position info="not_deleted" x="618" y="4"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="212" y="0"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="212" y="0"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="10" y="0"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="231" y="0"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="231" y="0"/>
+</item>
+<item historyLabel="InventryDetails.java" index="6">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="231" y="0"/>
+</item>
+<item historyLabel="Util.java" index="7">
+<position info="not_deleted" x="433" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="648" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="657" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="2052" y="0"/>
+</item>
+<item historyLabel="InventoryInterface.java" index="9">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="2052" y="0"/>
+</item>
+<item historyLabel="InventoryInterface.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="InventoryInterface.java" index="9">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="2052" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="1979" y="14"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="Gambler.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gambler.java" index="10">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="Gambler.java" index="10">
+<position info="not_deleted" x="755" y="0"/>
+</item>
+<item historyLabel="Gambler.java" index="10">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="Gambler.java" index="10">
+<position info="not_deleted" x="1171" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position/>
+</item>
+<item historyLabel="json-simple-1.1-sources.jar" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position/>
+</item>
+<item historyLabel="json-simple-1.1.jar" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Util.java" index="8">
+<position/>
+</item>
+<item historyLabel="pom.xml" index="13"/>
+<item active="true" historyLabel="Util.java" index="8">
 <position/>
 </item>
 </navigationHistory>
@@ -675,6 +656,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="pom.xml" tooltip="/home/admin1/Downloads/json-simple-1.1-bundle.jar/pom.xml">
+<persistable element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" path="pom.xml"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="json-simple-1.1.jar" tooltip="/home/admin1/Downloads/json-simple-1.1-bundle.jar/json-simple-1.1.jar">
+<persistable element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" path="json-simple-1.1.jar"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="json-simple-1.1-sources.jar" tooltip="/home/admin1/Downloads/json-simple-1.1-bundle.jar/json-simple-1.1-sources.jar">
+<persistable element="=JsonInventory/\/home\/admin1\/Downloads\/json-simple-1.1-bundle.jar" path="json-simple-1.1-sources.jar"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Gambler.java" tooltip="BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java">
+<persistable path="/BridgeLabz/src/com/bridgelabz/logicalprograms/Gambler.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryInterface.java" tooltip="JsonInventory/src/com/blbz/services/InventoryInterface.java">
+<persistable path="/JsonInventory/src/com/blbz/services/InventoryInterface.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventryDetails.java" tooltip="JsonInventory/src/com/blbz/Classmodel/InventryDetails.java">
+<persistable path="/JsonInventory/src/com/blbz/Classmodel/InventryDetails.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UnOrderedList.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java">
 <persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/UnOrderedList.java"/>
 </file>
@@ -698,27 +697,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberOfBST.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/NumberOfBST.java">
 <persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/NumberOfBST.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queue.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructreprograms/base/Queue.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructreprograms/base/Queue.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedList.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructreprograms/base/LinkedList.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructreprograms/base/LinkedList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Calendar.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/Calendar.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/Calendar.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BankingCashCounter.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/BankingCashCounter.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/BankingCashCounter.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedParentheses.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/BalancedParentheses.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/BalancedParentheses.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pelindrom.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/TestCases/Pelindrom.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/TestCases/Pelindrom.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalancedParaen.java" tooltip="BridgeLabz/src/com/bridgelabz/datastructureprograms/TestCases/BalancedParaen.java">
-<persistable path="/BridgeLabz/src/com/bridgelabz/datastructureprograms/TestCases/BalancedParaen.java"/>
 </file>
 </mruList>
 </workbench>

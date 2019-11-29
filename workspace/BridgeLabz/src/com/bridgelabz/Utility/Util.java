@@ -11,7 +11,6 @@ package com.bridgelabz.Utility;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 
 public class Util 
 {
@@ -53,7 +52,7 @@ public class Util
 	{
 		String[] arr=new String[len];
 		for(int i=0;i<len;i++)
-			sc.nextLine();
+			arr[i]=sc.nextLine();
 		return arr;
 	}
 

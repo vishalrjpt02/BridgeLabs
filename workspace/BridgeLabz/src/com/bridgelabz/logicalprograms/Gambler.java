@@ -14,14 +14,17 @@ public class Gambler
 	public static void main(String[] args)
 	{
 		Scanner sc =new Scanner(System.in);
-		int max=sc.nextInt();
+		System.out.println("Enter the maximum amount on bet");
+		int stake=sc.nextInt();
+		System.out.println("Enter the mininmum amount");
 		int min=sc.nextInt();
+		System.out.println("Enter total bets");
 		int plays=sc.nextInt();
 		int win=0,loss=0;
-		int bet=0,cash=max;
+		int bet=0,cash=stake;
 		for(int i=0;i<plays;i++)
 		{
-			while(cash>min && cash>0)
+			while((cash>min && cash>0))
 			{
 				bet++;
 				if(Math.random()>0.5)
@@ -29,8 +32,10 @@ public class Gambler
 				else
 					{loss++; cash--;
 					}
+				
 			}
-			
+			if(bet>plays)
+				break;
 		}
 		System.out.println("total bet " +bet +" \ntotal win " +win +" \nloss is " +loss);
 	}

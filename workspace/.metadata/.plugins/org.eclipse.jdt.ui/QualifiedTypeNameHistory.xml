@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.io.StringBufferInputStream"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="Utility.Mystack"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
@@ -24,17 +23,21 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.bridgelabz.Datastructre.base.LinkedList"/>
 <fullyQualifiedTypeName name="com.bridgelabz.Datastructre.base.stack"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructreprograms.base.stack.Stack"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructreprograms.base.Stack"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.BalancedParentheses"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.PalindromeChecker"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructreprograms.base.OrderedList"/>
 <fullyQualifiedTypeName name="com.bridgelabz.Utility.Util"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.parser.JSONParser"/>
+<fullyQualifiedTypeName name="javax.tools.JavaFileObject"/>
 </qualifiedTypeNameHistroy>

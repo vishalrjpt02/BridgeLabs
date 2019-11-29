@@ -10,7 +10,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import com.bridgelabz.Utility.*;
+import com.bridgelabz.Utility.myscanner;
+import com.bridgelabz.datastructreprograms.base.LinkedList;
 public class SearchingNumber 
 {
 	public static void main(String[] args) throws Exception
@@ -63,5 +64,5 @@ public class SearchingNumber
 		{
 			return list[n%11].contains(n);
 		}
-	
+
 }

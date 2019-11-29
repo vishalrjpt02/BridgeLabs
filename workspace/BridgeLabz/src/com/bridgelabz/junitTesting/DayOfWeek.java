@@ -1,21 +1,22 @@
-/*To the Util Class add dayOfWeek static function that takes a date as input and prints the day of the week
-that date falls on. Your program should take three command-line arguments: m (month), d (day), and y (year).
-For m use 1 for January, 2 for February, and so forth. For output print 0 for Sunday, 1 for Monday, 2 for 
-Tuesday, and so forth. Use the following formulas, for the Gregorian calendar (where / denotes integer division):
-y0 = y − (14 − m) / 12
-x = y0 + y0/4 − y0/100 + y0/400
-m0 = m + 12 × ((14 − m) / 12) − 2
-d0 = (d + x + 31m0 / 12) mod 7*/
+/**********************************************************************************
+ * @author   Vishal kumar
+ * @version  1.0
+ * @purpose  To find out the day by taking date
+ * @date     12/11/19
+ * @file	 DayOfWeek.java
+ **********************************************************************************/
 package com.bridgelabz.junitTesting;
-import java.util.*;
+
+
+import com.bridgelabz.Utility.Util;
 public class DayOfWeek 
 {
 	public static void main(String[] args) 
 	{
-		Scanner sc=new Scanner(System.in);
-		int date=sc.nextInt();
-		int month=sc.nextInt();
-		int year=sc.nextInt();
+		System.out.println("Enter the date in  formate of dd/mm/yyyy");
+		int date=Util.readint();
+		int month=Util.readint();
+		int year=Util.readint();
 		System.out.println(Dayoftheweek(date,month,year));
 
 	}

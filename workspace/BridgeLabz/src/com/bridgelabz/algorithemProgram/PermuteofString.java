@@ -1,3 +1,11 @@
+/**********************************************************************************
+ * @author   Vishal kumar
+ * @version  1.0
+ * @purpose  To check permute of string
+ * @date     22/11/19
+ * @file	 permuteofString.java
+ **********************************************************************************/
+
 package com.bridgelabz.algorithemProgram;
 import java.util.ArrayList;
 
@@ -9,6 +17,7 @@ public class PermuteofString
 	static  ArrayList<String> al=new ArrayList<String>();
 	public static void main(String[] args)
 	{
+		System.out.println("Enter the string want to calculate permutes");
 		String s1 = myscanner.readString();
 		int index=0;
 		int length=s1.length();

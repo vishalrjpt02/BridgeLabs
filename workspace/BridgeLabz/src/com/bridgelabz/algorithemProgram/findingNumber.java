@@ -1,13 +1,13 @@
 /**********************************************************************************
- * @author   vishal kumar
+ * @author   Vishal kumar
  * @version  1.0
- * @purpose  To create a utility package
+ * @purpose  To find out number given by a user
  * @date     21/11/19
- * @file	 Util.java
+ * @file	 findingthenumber.java
  **********************************************************************************/
 
 package com.bridgelabz.algorithemProgram;
-//import java.util.*;
+
 public class findingNumber 
 {
 	public static void main(String []args) 
