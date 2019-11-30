@@ -2,6 +2,8 @@ package com.bridgelabz.basic;
 
 import org.junit.Test;
 
+import junit.framework.Assert;
+
 
 public class StringReplaceTest
 {
@@ -9,7 +11,7 @@ public class StringReplaceTest
 	public void teststring()
 	{
 		StringReplace test=new StringReplace();
-		String result=test.Replace("hello <<username>> , how are you");
-		assert.equals(result,"")
+		String result=StringReplace.Replace("vishal");
+		Assert.assertEquals(result,"hello vishal , how are you ");
 	}
 }

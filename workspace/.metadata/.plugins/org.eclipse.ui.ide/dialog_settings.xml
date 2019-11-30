@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="CleanDialogSettings">
-		<item value="563" key="DIALOG_WIDTH"/>
-		<item value="true" key="BUILD_ALL"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
-		<item value="475" key="DIALOG_HEIGHT"/>
-		<item value="402" key="DIALOG_X_ORIGIN"/>
-		<item value="160" key="DIALOG_Y_ORIGIN"/>
-		<item value="true" key="BUILD_NOW"/>
+		<item key="DIALOG_WIDTH" value="563"/>
+		<item key="BUILD_ALL" value="true"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_HEIGHT" value="475"/>
+		<item key="DIALOG_X_ORIGIN" value="402"/>
+		<item key="DIALOG_Y_ORIGIN" value="160"/>
+		<item key="BUILD_NOW" value="true"/>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/admin1/workspace/JsonInventory"/>
+			<item value="/home/admin1/workspace"/>
 		</list>
 	</section>
 </section>

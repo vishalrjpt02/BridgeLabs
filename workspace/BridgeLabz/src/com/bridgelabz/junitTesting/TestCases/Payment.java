@@ -1,11 +1,12 @@
 package com.bridgelabz.junitTesting.TestCases;
-//import static org.junit.Assert.*;
-import junit.framework.Assert;
-
 import org.junit.Test;
 
 import com.bridgelabz.junitTesting.MonthlyPayment;
 
+import junit.framework.Assert;
+import junit.framework.JUnit4TestAdapter;;
+
+@SuppressWarnings("deprecation")
 public class Payment {
 	
 	@Test

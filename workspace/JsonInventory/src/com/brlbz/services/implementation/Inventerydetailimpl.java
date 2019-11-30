@@ -19,6 +19,7 @@ import com.blbz.utility.Util;
 public class Inventerydetailimpl implements InventoryInterface
 {
 
+	@SuppressWarnings("unchecked")
 	public void defaultInventory()
 	{
 		JSONObject finalObject=new JSONObject();
@@ -38,31 +39,39 @@ public class Inventerydetailimpl implements InventoryInterface
 		jsonobject1.put("price", 1100);
 		
 		JSONObject jsonobject2=new JSONObject();
-		jsonobject1.put("Name","Pulses");
-		jsonobject1.put("Weight", 111);
-		jsonobject1.put("price", 1200);
+		jsonobject2.put("Name","Pulses");
+		jsonobject2.put("Weight", 111);
+		jsonobject2.put("price", 1200);
 		
 		JSONObject jsonobject3=new JSONObject();
-		jsonobject1.put("Name","suger");
-		jsonobject1.put("Weight", 100);
-		jsonobject1.put("price", 1100);
+		jsonobject3.put("Name","suger");
+		jsonobject3.put("Weight", 100);
+		jsonobject3.put("price", 1100);
 		
 		jsonArray.add(jsonobject);
-		jsonArray.add(jsonobject1);
-		jsonArray.add(jsonobject2);
-		jsonArray.add(jsonobject3);
+		jsonArray1.add(jsonobject1);
+		jsonArray2.add(jsonobject2);
+		jsonArray3.add(jsonobject3);
 		
-		try 
+		finalObject.put("Rice", jsonArray);
+		finalObject.put("Wheat", jsonArray1);
+		finalObject.put("Pulses", jsonArray2);
+		finalObject.put("suger",jsonArray3);
+		
+		try (BufferedWriter writer=new BufferedWriter(new FileWriter("/home/admin1/Desktop/vishal/sample1.json")))
 		{
-			BufferedWriter writer=new BufferedWriter(new FileWriter("home/admin1/Desktop/vishal/sample.json"));
+			writer.write(finalObject.toJSONString());
 		}
 		catch(IOException e)
 		{
 			e.printStackTrace();
 		}
+		
 	}
-		@Override
-		public void listInventory(JSONArray jsonarray)
+	
+	
+	@Override
+	public void listInventory(JSONArray jsonarray)
 		{
 			String array=jsonarray.toString();
 			System.out.println(array);
@@ -70,18 +79,20 @@ public class Inventerydetailimpl implements InventoryInterface
 		
 		
 		
-		public void writeData()
-		{
+	@SuppressWarnings("unchecked")
+	public void writeData()
+	{
 			//Inventory array
 			String[] names = new String[] {"Rice", "Wheat","Pulses","Suger"};
 			JSONObject finalObject = new JSONObject();	
 			for(String name: names) 
 			{
 				System.out.print("Enter number of types of " + name + " : ");
-				int count = Util.readint();	//	types of every inventory
+				int count = Util.readint();			//	types of every inventory
 				JSONArray array = new JSONArray();	//	array to store types
 				
-				for(int i = 0; i < count; i++) {	//	 object for every type
+				for(int i = 0; i < count; i++) 
+				{	//	 object for every type
 					JSONObject jsonObject  = new JSONObject();
 					System.out.print("Enter name, weight and price: ");
 					jsonObject.put("name", Util.readString());
@@ -93,7 +104,7 @@ public class Inventerydetailimpl implements InventoryInterface
 			}
 		
 			 //	to write data to the file
-			try(PrintWriter printWriter = new PrintWriter("home/admin1/Desktop/vishal/sample.json")) 
+			try(PrintWriter printWriter = new PrintWriter("/home/admin1/Desktop/vishal/sample1.json")) 
 			{
 				printWriter.write(finalObject.toJSONString());
 			
@@ -101,16 +112,16 @@ public class Inventerydetailimpl implements InventoryInterface
 			{
 				e.printStackTrace();
 			}
-		}
+	}
 		
-		public void readData()
-		{
-			JSONArray jsoninputdata=new JSONArray();
-			JSONParser parsfiledata=new JSONParser();
-			JSONObject object; //toread every type of data
+	public void readData()
+	{
+			JSONArray jsoninputdata=new JSONArray();		//	array to get json data from file
+			JSONParser parsfiledata=new JSONParser();		//	parser to parse data from file
+			JSONObject object; 							//toread every type of data
 			
 			
-			try(BufferedReader bufferedReader = new BufferedReader(new FileReader("home/admin1/Desktop/Sample.json"))) 
+			try(BufferedReader bufferedReader = new BufferedReader(new FileReader("/home/admin1/Desktop/vishal/sample1.json"))) 
 			{
 				
 				object = (JSONObject) parsfiledata.parse(bufferedReader);
@@ -136,24 +147,24 @@ public class Inventerydetailimpl implements InventoryInterface
 			}	
 		
 		
-		}
+	}
+	
+	
 		/**
 		 * @param array - json array
 		 * @returns value of given inventory array
 		 */
 	
-		double getValue(JSONArray array)
-		{
-			Iterator<?> iterator = array.iterator();	//	iterator to iterate
-			double value = 0;							//	inventory value
-			while(iterator.hasNext()) 
-			{
-				JSONObject obj = (JSONObject)iterator.next();
-				double weight = (double)obj.get("Weight");
-				double price = (double)obj.get("Price");
-				value = value + weight * price;			//	adding value
-			}
-			return value;
+	double getValue(JSONArray array){
+		Iterator<?> iterator = array.iterator();	//	iterator to iterate
+		double value = 0;	//	inventory value
+		while(iterator.hasNext()) {
+			JSONObject obj = (JSONObject)iterator.next();
+			double weight = (double)obj.get("Weight");
+			double price = (double)obj.get("Price");
+			value = value + weight * price;	//	adding value
 		}
+		return value;
+	}
 		
 }
