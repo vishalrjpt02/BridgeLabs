@@ -8,18 +8,12 @@
 
 package com.blbz.services;
 
-import org.json.simple.JSONArray;
-
-public interface InventoryInterface
-{
-	public void listInventory(JSONArray inventoryList);
-
-	public void writeData();
-
-	public void readData();
-
-	public void defaultInventory();
-
-	
-	
+public interface InventoryInterface 
+{ 
+	void view();
+	void add();
+	void remove();
+	void totalPrice();
+	void totalWeight();
+	void exit();
 }

@@ -6,7 +6,6 @@
  * @file	Util.java
  *****************************************************************************************/
 
-
 package com.blbz.utility;
 
 import java.io.FileNotFoundException;
@@ -91,7 +90,8 @@ public class Util
 		}
 		return 0;
 	}
-	public static JSONObject readData() {
+	public static JSONObject readData() 
+	{
 		JSONParser jsonParser = new JSONParser();
 		JSONObject jsonObject = new JSONObject();
 		
@@ -108,6 +108,5 @@ public class Util
 		}
 		return jsonObject;
 	}
-	
-	
+		
 }
