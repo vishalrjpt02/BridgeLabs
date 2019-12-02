@@ -6,45 +6,46 @@
  **********************************************************************************/
 
 
-package com.blbz.InventryMannegement.Controller;
+package com.blbz.Controller;
+
+import java.util.InputMismatchException;
 
 import com.blbz.services.implementation.InventoryImplementation;
 import com.blbz.utility.Util;
 
-public class Main 
+public class InventoryMain 
 {
 	public static void main(String[] args) 
 	{
 		int temp=0;
 		
-		
+		char s1='0';
 		while(temp==0) 
 		{
+			try {
 		System.out.println("mark your choice\n 1 -> view items in inventry \n 2 -> Add Items  \n 3 -> remove Items \n 4 -> Find Total price \n 5 -> Find Total weight \n 6 -> To Exit");
 			InventoryImplementation inventoryObject= new InventoryImplementation();
-			int n=Util.readint();
-
-			
-				
-		switch (n)
+		
+		s1=(Util.readline()).charAt(0);
+		switch (s1)
 		{
 		
-		case 1:
+		case '1':
 			inventoryObject.view();
 			break;
-		case 2:
+		case '2':
 			inventoryObject.add();
 			break;
-		case 3:
+		case '3':
 			inventoryObject.remove();
 			break;
-		case 4:
+		case '4':
 			inventoryObject.totalPrice();
 			break;
-		case 5:
+		case '5':
 			inventoryObject.totalWeight();
 			break;
-		case 6:
+		case '6':
 			System.out.println("Thank you");
 			temp = 1;
 			break;
@@ -53,11 +54,11 @@ public class Main
 			break;
 			
 		}
-		if((Integer.valueOf(n)>'A'||Integer.valueOf(n)>'Z')||(Integer.valueOf(n)>'a'||Integer.valueOf(n)>'z'))
-		{
-			System.out.println("Exiting the program");
-			break;
-		}
-		}
+		
+		}catch(InputMismatchException e){
+				System.out.println(e.getMessage());
+			}
+	
 	}
+}
 }

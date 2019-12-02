@@ -5,7 +5,6 @@
  * @date	30/11/19
  ***********************************************************************************************/
 
-
 package com.blbz.services.implementation;
 
 import java.io.FileNotFoundException;
@@ -15,14 +14,15 @@ import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import com.blbz.InventryMannegement.Classmodel.InventoryModel;
+
+import com.blbz.Classmodel.InventoryModel;
 import com.blbz.services.InventoryInterface;
 import com.blbz.utility.Util;
 
 public class InventoryImplementation implements InventoryInterface {
 
 	static String path ="/home/admin1/Desktop/vishal/sample1.json";
-	static int price = 0;
+	static int price	 = 0;
 	static int total = 0;
 
 	/*to add the element from list

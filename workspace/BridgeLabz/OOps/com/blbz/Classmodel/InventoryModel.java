@@ -5,7 +5,7 @@
  * @date	28/11/19
  * @file 	InventryDetails.java
  ********************************************************************************************/
-package com.blbz.InventryMannegement.Classmodel;
+package com.blbz.Classmodel;
 
 public class InventoryModel 
 {
