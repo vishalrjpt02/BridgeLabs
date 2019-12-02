@@ -9,6 +9,7 @@ public class Distance
 	
 	public static void main(String[] args)
 	{
+		System.out.println("Enter the two points");
 		Scanner sc =new Scanner(System.in);
 		int x=sc.nextInt();
 		int y=sc.nextInt();

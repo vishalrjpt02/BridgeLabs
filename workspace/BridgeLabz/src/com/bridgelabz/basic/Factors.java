@@ -6,8 +6,8 @@
  * @file     primefact.java
  *************************************************************************************/
 
-package com.bridgelabz.basic;
-\/*Factors
+
+/*Factors
 Desc -> Computes the prime factorization of N using brute force.
 I/P -> Number to find the prime factors
 Logic -> Traverse till i*i <= N instead of i <= N for efficiency.
