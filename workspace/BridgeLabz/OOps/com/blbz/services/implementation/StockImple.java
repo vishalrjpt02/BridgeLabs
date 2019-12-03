@@ -9,6 +9,7 @@
 
 package com.blbz.services.implementation;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -25,10 +26,9 @@ import com.blbz.utility.Util;
 
 public class StockImple implements StockInterface{
 	
-	static String path="/home/admin1/Dektop/vishal/sample2.json";
+	static String path="/home/admin1/Desktop/vishal/sample2.json";
 	static double totalshare;
 	static double totalprice;
-	
 	
 	
 	/*methode add a company into the list
@@ -39,11 +39,15 @@ public class StockImple implements StockInterface{
 	public void addshare()
 	{
 		try {
-			FileReader fr=new FileReader(path);
-			JSONParser read=new JSONParser();
-			Object obj=read.parse(fr);
-			JSONArray list_array=(JSONArray)obj;
-			FileWriter fw = new FileWriter(path);
+			JSONArray list_array=new JSONArray();
+			if(new File(path).length()!=0) 
+			{
+				FileReader fr=new FileReader(path);
+				JSONParser read=new JSONParser();
+				Object obj=read.parse(fr);
+				list_array=(JSONArray)obj;
+			}
+			
 			JSONObject jobj = new JSONObject();
 			
 			//Adding the company and stocks
@@ -71,8 +75,11 @@ public class StockImple implements StockInterface{
 			jobj.put("stock_value", Stock.getPrice());
 			
 			list_array.add(jobj);
+			FileWriter fw = new FileWriter(path);
+			fw.write(list_array.toJSONString());
 			fw.flush();
 			fw.close();
+			System.out.println("company added...");
 		}	
 		catch(Exception e)
 		{
@@ -87,7 +94,8 @@ public class StockImple implements StockInterface{
 	public void viewshare()
 	{
 		try {
-			
+			if(new File(path).length()!=0)
+			{
 			JSONParser jp = new JSONParser();
 			Object parse = (Object)jp.parse(new FileReader(path));
 					
@@ -101,6 +109,9 @@ public class StockImple implements StockInterface{
 				System.out.println("Stock price : " + jobj.get("stock_value"));
 				System.out.println();
 			}
+			}
+			else
+			System.out.println("File is empty...");
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -116,7 +127,10 @@ public class StockImple implements StockInterface{
 	 */
 	@Override
 	public void numberofshare() {
-		try {
+		try 
+		{
+		if(new File(path).length()!=0)
+		{
 		double total_share = 0;
 		int count_of_share=0;
 		JSONParser jpar=new JSONParser();
@@ -131,7 +145,11 @@ public class StockImple implements StockInterface{
 		}
 		System.out.println("Total number of shares are " +count_of_share +"\n amount of whole share is"+total_share);
 		
-		} 
+		}
+		else
+			System.out.println("File is empty...");
+		}
+		
 		catch (IOException | ParseException e) {
 					e.printStackTrace();
 		}
@@ -145,6 +163,8 @@ public class StockImple implements StockInterface{
 	@Override
 	public void sharePrice() {
 		try {
+		 if(new File(path).length()!=0)
+		  {
 			JSONParser jpar=new JSONParser();
 			Object obj=jpar.parse(new FileReader(path));
 			JSONArray jarr=(JSONArray)obj;
@@ -163,6 +183,9 @@ public class StockImple implements StockInterface{
 					System.out.println("The stock price of "+company+" is "+input.get("stock_value"));
 				}
 			}
+		  }
+		 else
+			 System.out.println("File is empty...");
 		}
 		catch(Exception e)
 		{
@@ -179,7 +202,7 @@ public class StockImple implements StockInterface{
 	
 	@Override
 	public void stockreport() {
-		System.out.println("showing the all companies stocks and stock values");
+		System.out.println("Showing the all companies stocks and stock values \n");
 		viewshare();
 		System.out.println("--------------final Stock report is----------------");
 		
@@ -192,17 +215,17 @@ public class StockImple implements StockInterface{
 			for(Object read:jarr)
 				{
 					JSONObject readstock=(JSONObject)read;
-					double temp=(int)readstock.get("Stocks");
+					double temp=(double)readstock.get("Stocks");
 					totalshare=totalshare+temp;
 					
 					JSONObject readvalue=(JSONObject)read;
-					double temp1=(int)readvalue.get("Stocks");
+					double temp1=(double)readvalue.get("Stocks");
 					totalprice=totalprice+temp1;
 					count++;
 				}
-			System.out.println("Total number of Comapnies "+count);
-			System.out.println("Total number of Stocks "+totalshare);
-			System.out.println("Total price of stocks "+totalprice);
+			System.out.println("Total number of Comapnies\t"+count);
+			System.out.println("Total number of Stocks\t"+totalshare);
+			System.out.println("Total price of stocks\t"+totalprice +"\n");
 		}
 		catch(Exception e)
 		{
@@ -215,7 +238,8 @@ public class StockImple implements StockInterface{
 	public void removeshare() {
 		
 	try {
-			
+		if(new File(path).length()!=0)
+		{
 		System.out.println("enter the name of company which stocks to be remove");
 		String item = Util.readString();
 		boolean result = true;
@@ -225,10 +249,10 @@ public class StockImple implements StockInterface{
 		for (int i = 0; i < jarray.size(); i++) {
 			JSONObject jobj = (JSONObject) jarray.get(i);
 
-			if (item.equals(jobj.get("Name"))) {
+			if (item.equals(jobj.get("Company_name"))) {
 				jarray.remove(jobj);
 				result = false;
-				break;
+
 			}
 		}
 		if (result) {
@@ -240,6 +264,9 @@ public class StockImple implements StockInterface{
 			fw.write(jarray.toJSONString());
 			fw.flush();
 		}
+		}
+		else
+			System.out.println("File is empty...");
 		}	
 	catch(Exception e)
 		{
@@ -248,4 +275,3 @@ public class StockImple implements StockInterface{
 	
 	}
 }
-	
