@@ -8,6 +8,7 @@ import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import com.blbz.Classmodel.StockModel;
 import com.blbz.services.StockInterface;
@@ -101,12 +102,38 @@ public class StockImple implements StockInterface{
 	}
 	@Override
 	public void nubmerofshare() {
-		// TODO Auto-generated method stub
+		try {
+		double total_share = 0;
+		int count_of_share=0;
+		JSONParser jpar=new JSONParser();
+		Object obj=jpar.parse(new FileReader(path));
+		JSONArray jarr=(JSONArray)obj;
+		for(Object read:jarr)
+		{
+			JSONObject input=(JSONObject)read;
+			double temp=(double)input.get("stocks");
+			total_share=total_share+temp;
+			count_of_share++;
+		}
+		System.out.println("Total number of shares are " +count_of_share +"\n amount of whole share is"+total_share);
 		
+		} 
+		catch (IOException | ParseException e) {
+					e.printStackTrace();
+		}
 	}
 	@Override
 	public void sharePrice() {
-		// TODO Auto-generated method stub
+		try {
+			JSONParser jpar=new JSONParser();
+			Object obj=jpar.parse(new FileReader(path));
+			JSONArray jarr=(JSONArray)obj;
+			for(Object read:jarr)
+			{
+				JSONObject input=
+			}
+			
+		}
 		
 	}
 	@Override
