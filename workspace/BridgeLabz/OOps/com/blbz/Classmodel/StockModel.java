@@ -1,3 +1,11 @@
+/*********************************************************************************************
+ * this file is the encapsulation of all variables.
+ * @author 	vishal kumar
+ * @purpose	to encapsulate all variables
+ * @version 1.0
+ * @date	02/12/19
+ ***********************************************************************************************/
+
 package com.blbz.Classmodel;
 
 public class StockModel {
