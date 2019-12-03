@@ -21,6 +21,22 @@ import org.json.simple.parser.ParseException;
 public class Util
 {
 	static Scanner sc=new Scanner(System.in);
+	
+	public static char readChar()
+	{
+		try {
+			return sc.next().charAt(0);
+		}
+		catch(Exception e)
+		{
+			return 0;
+		}
+			
+		
+	}
+	
+	
+	
 	/*
 	 * method to read a string
 	 */
