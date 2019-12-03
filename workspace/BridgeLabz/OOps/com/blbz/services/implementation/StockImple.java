@@ -26,7 +26,7 @@ import com.blbz.utility.Util;
 
 public class StockImple implements StockInterface{
 	
-	static String path="/home/admin1/Desktop/vishal/sample2.json";
+	static String path="/home/admin1/workspace/BridgeLabz/OOps/json folder/sample2.json";
 	static double totalshare;
 	static double totalprice;
 	
@@ -58,11 +58,9 @@ public class StockImple implements StockInterface{
 			System.out.println("Enter the name of company:");
 			name = Util.readString();
 			
-
-			System.out.println("Enter the nuber of stock: ");
+			System.out.println("Enter the number of stock: ");
 			number_of_stock = Util.readint();
 			
-
 			System.out.println("Enter the value of stock :");
 			stock_value = Util.readint();
 			
@@ -139,11 +137,11 @@ public class StockImple implements StockInterface{
 		for(Object read:jarr)
 		{
 			JSONObject input=(JSONObject)read;
-			double temp=(double)input.get("stocks");
+			double temp=(double)input.get("Stocks");
 			total_share=total_share+temp;
 			count_of_share++;
 		}
-		System.out.println("Total number of shares are " +count_of_share +"\n amount of whole share is"+total_share);
+		System.out.println("Total number of shares are : "+count_of_share+"\namount of whole share is   : "+total_share);
 		
 		}
 		else
@@ -204,7 +202,7 @@ public class StockImple implements StockInterface{
 	public void stockreport() {
 		System.out.println("Showing the all companies stocks and stock values \n");
 		viewshare();
-		System.out.println("--------------final Stock report is----------------");
+		System.out.println("--------------final Stock report-----------------");
 		
 		try 
 		{	
@@ -223,7 +221,7 @@ public class StockImple implements StockInterface{
 					totalprice=totalprice+temp1;
 					count++;
 				}
-			System.out.println("Total number of Comapnies\t"+count);
+			System.out.println("Total number of Comapnies "+count);
 			System.out.println("Total number of Stocks\t"+totalshare);
 			System.out.println("Total price of stocks\t"+totalprice +"\n");
 		}

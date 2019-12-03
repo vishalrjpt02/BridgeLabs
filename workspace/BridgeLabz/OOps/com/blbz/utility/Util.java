@@ -11,7 +11,6 @@ package com.blbz.utility;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
 import java.util.Scanner;
 
 import org.json.simple.JSONObject;
@@ -31,12 +30,9 @@ public class Util
 		{
 			return 0;
 		}
-			
-		
+				
 	}
-	
-	
-	
+
 	/*
 	 * method to read a string
 	 */
@@ -48,63 +44,29 @@ public class Util
 		catch(Exception e)
 		{
 			System.out.println("e");
+			return null;
 		}
-		return "";
+		
 	}
 	public static String readline()
 	{
-		try{
-			return sc.nextLine();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-		}
-		return "";
+		return sc.nextLine();
 	}
 	public static int readint()
 	{
-		try{
-			return sc.nextInt();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-		}
-		return 0;
+		return sc.nextInt();
 	}
 	public static double readDouble()
 	{
-		try{
-			return sc.nextDouble();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-		}
-		return 0.0;
+		return sc.nextDouble();
 	}
 	public static boolean readboolean()
 	{
-		try{
-			return sc.nextBoolean();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-		}
-		return false;
+		return sc.nextBoolean();
 	}
 	public static float readfloat()
 	{
-		try{
-			return sc.nextFloat();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-		}
-		return 0;
+		return sc.nextFloat();
 	}
 	public static JSONObject readData() 
 	{

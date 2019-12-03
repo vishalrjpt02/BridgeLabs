@@ -1,4 +1,4 @@
-/***********************************************************************************************
+ /***********************************************************************************************
  * this file is the implemenatation of interface it process the input and gives the result
  * @author	vishal kumar
  * @version 1.0
@@ -111,14 +111,17 @@ public class InventoryImplementation implements InventoryInterface {
 				System.out.println();
 			}
 
-		} catch (FileNotFoundException e) {
+		} 
+		
+	 catch (FileNotFoundException e) 
+	  {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	  }
 	/*to remove the element from list
 	 * @param:	nothing
 	 * @return:	void

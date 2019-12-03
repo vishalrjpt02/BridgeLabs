@@ -17,30 +17,28 @@ public class StockMain {
 
 	public static void main(String[] args) {
 
-		int temp=0;
+	 int temp=0;
 		
-		char s1='0';
-		while(temp==0) 
-		{
-			try {
+	  char s1='0';
+	  while(temp==0) 
+	  {
+	   try {
 		System.out.println("mark your choice\n 1 -> view companies \n 2 -> Add company  \n 3 -> remove Stocks \n 4 -> Find number of shares \n 5 -> Stock report  \n 6 -> To Exit");
 			StockImple stockObject= new StockImple();
-		
-		s1=(Util.readline()).charAt(0);
+		s1=Util.readChar();
 		switch (s1)
 		{
-		
 		case '1':
 			stockObject.viewshare();
 			break;
 		case '2':
-			stockObject.addshare();;
+			stockObject.addshare();
 			break;
 		case '3':
-			stockObject.numberofshare();
+			stockObject.removeshare();
 			break;
 		case '4':
-			stockObject.removeshare();
+			stockObject.numberofshare();
 			break;
 		case '5':
 			stockObject.stockreport();
@@ -56,7 +54,7 @@ public class StockMain {
 		}
 		
 		}catch(InputMismatchException e){
-				System.out.println(e.getMessage());
+				System.out.println("e");
 			}
 	
 
