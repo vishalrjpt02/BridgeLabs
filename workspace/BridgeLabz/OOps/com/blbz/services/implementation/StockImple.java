@@ -1,3 +1,12 @@
+/*********************************************************************************************
+ * This file do all the implemntation/calculation part of program ,implements stock interface
+ * @author 	vishal kumar
+ * @purpose to perform implementation of stockInterface
+ * @version 1.0
+ * @date 	02/12/19
+ **********************************************************************************************/
+
+
 package com.blbz.services.implementation;
 
 import java.io.FileNotFoundException;
@@ -26,6 +35,7 @@ public class StockImple implements StockInterface{
 	 * @param none
 	 * @return nothing
 	 */
+	@SuppressWarnings("unchecked")
 	public void addshare()
 	{
 		try {
@@ -100,8 +110,12 @@ public class StockImple implements StockInterface{
 			e.printStackTrace();
 		}
 	}
+	/*this methode finds out the total number of shares
+	 * @param 	void
+	 * @return	void
+	 */
 	@Override
-	public void nubmerofshare() {
+	public void numberofshare() {
 		try {
 		double total_share = 0;
 		int count_of_share=0;
@@ -122,23 +136,116 @@ public class StockImple implements StockInterface{
 					e.printStackTrace();
 		}
 	}
+	
+	/*this the implemetation of shareprice methode in stockinterface it shows the share price of total
+	 * @param  -nothing
+	 * @return -void 
+	 */
+	
 	@Override
 	public void sharePrice() {
 		try {
 			JSONParser jpar=new JSONParser();
 			Object obj=jpar.parse(new FileReader(path));
 			JSONArray jarr=(JSONArray)obj;
+			System.out.println("Choose your company name");
 			for(Object read:jarr)
 			{
-				JSONObject input=
+				JSONObject input=(JSONObject)read;
+				System.out.println((String)input.get("Comapny_name"));
 			}
-			
+			String company=Util.readline();
+			for(Object read:jarr)
+			{
+				JSONObject input=(JSONObject)read;
+				if((String)input.get("Company_name")==company)
+				{
+					System.out.println("The stock price of "+company+" is "+input.get("stock_value"));
+				}
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
 		}
 		
 	}
+
+	/*this methode gives the whole report of total stock and prices
+	 * @param -nothing
+	 * @return -nothing
+	 */
+	
+	
 	@Override
 	public void stockreport() {
-		// TODO Auto-generated method stub
+		System.out.println("showing the all companies stocks and stock values");
+		viewshare();
+		System.out.println("--------------final Stock report is----------------");
 		
+		try 
+		{	
+			JSONParser jpar=new JSONParser();
+			Object obj=jpar.parse(new FileReader(path));
+			JSONArray jarr=(JSONArray)obj;
+			int count=0;
+			for(Object read:jarr)
+				{
+					JSONObject readstock=(JSONObject)read;
+					double temp=(int)readstock.get("Stocks");
+					totalshare=totalshare+temp;
+					
+					JSONObject readvalue=(JSONObject)read;
+					double temp1=(int)readvalue.get("Stocks");
+					totalprice=totalprice+temp1;
+					count++;
+				}
+			System.out.println("Total number of Comapnies "+count);
+			System.out.println("Total number of Stocks "+totalshare);
+			System.out.println("Total price of stocks "+totalprice);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	
+
+	public void removeshare() {
+		
+	try {
+			
+		System.out.println("enter the name of company which stocks to be remove");
+		String item = Util.readString();
+		boolean result = true;
+		FileReader fr = new FileReader(path);
+		JSONParser jp = new JSONParser();
+		JSONArray jarray = (JSONArray) jp.parse(fr);
+		for (int i = 0; i < jarray.size(); i++) {
+			JSONObject jobj = (JSONObject) jarray.get(i);
+
+			if (item.equals(jobj.get("Name"))) {
+				jarray.remove(jobj);
+				result = false;
+				break;
+			}
+		}
+		if (result) {
+			System.out.println("Not found..");
+		} else {
+			System.out.println("Successful.");
+		}
+		try (FileWriter fw = new FileWriter(path)) {
+			fw.write(jarray.toJSONString());
+			fw.flush();
+		}
+		}	
+	catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	
 	}
 }
+	
