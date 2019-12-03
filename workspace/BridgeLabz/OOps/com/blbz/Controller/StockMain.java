@@ -1,8 +1,16 @@
+/*******************************************************************************************
+ * This the file to perform all command given by user and call the nethods to find output
+ * @author 	vishal kumar
+ * @version 1.0
+ * @date	02/12/19
+ * @purpose	to perform user interaction
+ *******************************************************************************************/
+
 package com.blbz.Controller;
 
 import java.util.InputMismatchException;
 
-
+import com.blbz.services.implementation.StockImple;
 import com.blbz.utility.Util;
 
 public class StockMain {
@@ -16,26 +24,26 @@ public class StockMain {
 		{
 			try {
 		System.out.println("mark your choice\n 1 -> view companies \n 2 -> Add company  \n 3 -> remove Stocks \n 4 -> Find number of shares \n 5 -> Stock report  \n 6 -> To Exit");
-			StockImpl stockObject= new StockImpl();
+			StockImple stockObject= new StockImple();
 		
 		s1=(Util.readline()).charAt(0);
 		switch (s1)
 		{
 		
 		case '1':
-			stockObject.view();
+			stockObject.viewshare();
 			break;
 		case '2':
-			stockObject.add();
+			stockObject.addshare();;
 			break;
 		case '3':
-			stockObject.remove();
+			stockObject.numberofshare();
 			break;
 		case '4':
-			stockObject.totalPrice();
+			stockObject.removeshare();
 			break;
 		case '5':
-			stockObject.totalWeight();
+			stockObject.stockreport();
 			break;
 		case '6':
 			System.out.println("Thank you");
@@ -54,4 +62,5 @@ public class StockMain {
 
 	}
 
+}
 }
