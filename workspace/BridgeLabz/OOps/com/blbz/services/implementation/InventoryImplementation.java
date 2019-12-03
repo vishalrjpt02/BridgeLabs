@@ -3,6 +3,7 @@
  * @author	vishal kumar
  * @version 1.0
  * @date	30/11/19
+ * @purpose	to implement the abstract method of invertry Interface.
  ***********************************************************************************************/
 
 package com.blbz.services.implementation;
