@@ -12,6 +12,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -19,7 +21,7 @@ import org.json.simple.parser.ParseException;
 
 public class Util
 {
-	static Scanner sc=new Scanner(System.in);
+	public static Scanner sc=new Scanner(System.in);
 	
 	public static char readChar()
 	{
@@ -35,20 +37,41 @@ public class Util
 
 	public static String readString()
 	{
-		return sc.next();
-		
+		String s=sc.next();
+		return s;
 	}
 	public static String readline()
 	{
-		return sc.nextLine();
+		try {
+			String s=sc.nextLine();
+			return s;
+		}
+		catch(Exception e) 
+		{
+		System.out.println(e);
+		return null;
+		}
+		
 	}
 	public static int readint()
 	{
-		return sc.nextInt();
+		try {
+			return sc.nextInt();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return 0;
 	}
 	public static double readDouble()
 	{
+		try {
 		return sc.nextDouble();
+		} 
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return 0;
 	}
 	public static boolean readboolean()
 	{
@@ -81,10 +104,37 @@ public class Util
 	{
 		
 	}
-	
-	
-	
-	
-	
+
+	public static boolean intChecker(String number) 
+	{
+		// regular expression for an integer number 
+        String regex = "[+-]?[0-9][0-9]*"; 
+        
+     // compiling regex 
+        Pattern p = Pattern.compile(regex); 
+        
+     // Creates a matcher that will match input1 against regex 
+        Matcher m = p.matcher(number);
+        
+        if(m.find() && m.group().equals(number)) 
+        	return true;
+        
+		return false;
+	}
+	 public static boolean isStringOnlyAlphabet(String str) 
+	    { 
+	        return ((str != null) 
+	                && (!str.equals("")) 
+	                && (str.matches("^[a-zA-Z]*$"))); 
+	    }
+	 
+	 public static void scannerClose() {
+			try {
+				sc.close();
+			}
+			catch(Exception e) {
+				System.out.println(e);
+			}
+	 }
 	
 }

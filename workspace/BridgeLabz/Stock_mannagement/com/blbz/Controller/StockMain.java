@@ -23,8 +23,9 @@ public class StockMain {
 	  while(temp==0) 
 	  {
 	   try {
-		System.out.println("mark your choice\n 1 -> view companies \n 2 -> Add company  \n 3 -> remove Stocks \n 4 -> Find number of shares \n 5 -> Stock report  \n 6 -> To Exit");
+		System.out.println("mark your choice\n 1 -> view companies \n 2 -> create a company account \n 3 -> remove Stocks \n 4 -> Find number of shares \n 5 -> Stock report  \n 6 -> Add company share \n 7-> view detailed report\n 8-> Exit");
 			StockImple stockObject= new StockImple();
+		
 		s1=Util.readChar();
 		switch (s1)
 		{
@@ -32,7 +33,7 @@ public class StockMain {
 			stockObject.viewshare();
 			break;
 		case '2':
-			stockObject.addshare();
+			ComapnyShareController.companyDetails();
 			break;
 		case '3':
 			stockObject.removeshare();
@@ -41,11 +42,14 @@ public class StockMain {
 			stockObject.numberofshare();
 			break;
 		case '5':
-			stockObject.stockreport();
+			ComapnyShareController.companyDetails();
 			break;
 		case '6':
-			System.out.println("Thank you");
-			temp = 1;
+			ComapnyShareController.companyDetails();
+			break;
+		case '7':
+			System.out.println("Thanku");
+			temp=1;
 			break;
 		default: 
 			System.out.println("Invalid input");

@@ -9,34 +9,17 @@
 package com.blbz.Classmodel;
 
 public class StockModel {
-
+	
 	private String Name;
 	private double shares;
 	private double price;
-	private String CompSymbol;
-	private String DateTime;
-	
+
 	public StockModel(String Name,double shares,double price)
 	{
 		this.Name=Name;
 		this.shares=shares;
 		this.price=price;
-		this.CompSymbol=CompSymbol;
-		this.DateTime=DateTime;
-	}
-	
-	
-	public String getCompSymbol() {
-		return CompSymbol;
-	}
-	public void setCompSymbol(String compSymbol) {
-		CompSymbol = compSymbol;
-	}
-	public String getDateTime() {
-		return DateTime;
-	}
-	public void setDateTime(String dateTime) {
-		DateTime = dateTime;
+		
 	}
 	public String getName() {
 		return Name;
@@ -56,4 +39,5 @@ public class StockModel {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
 }

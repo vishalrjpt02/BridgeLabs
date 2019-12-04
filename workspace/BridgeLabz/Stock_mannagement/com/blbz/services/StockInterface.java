@@ -8,6 +8,8 @@
 
 package com.blbz.services;
 
+import java.io.File;
+
 public interface StockInterface {
 
 	void addshare();
@@ -16,5 +18,8 @@ public interface StockInterface {
 	void sharePrice();
 	void stockreport();
 	void removeshare();
+	void buyShare(double amount, String symbol, File file2);
+	void sellShare(double amount, String symbol, File file2);
+	void printTransactionDetails();
 	
 }
