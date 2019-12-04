@@ -33,19 +33,9 @@ public class Util
 				
 	}
 
-	/*
-	 * method to read a string
-	 */
 	public static String readString()
 	{
-		try{
-			return sc.next();
-		}
-		catch(Exception e)
-		{
-			System.out.println("e");
-			return null;
-		}
+		return sc.next();
 		
 	}
 	public static String readline()
@@ -86,5 +76,15 @@ public class Util
 		}
 		return jsonObject;
 	}
+	
+	public static  void writedata()
+	{
 		
+	}
+	
+	
+	
+	
+	
+	
 }

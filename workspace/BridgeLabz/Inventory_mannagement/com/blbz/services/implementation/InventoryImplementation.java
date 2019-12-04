@@ -52,7 +52,7 @@ public class InventoryImplementation implements InventoryInterface {
 			int price;
 			int weight;
 			System.out.println("Enter the name of item :");
-			name = Util.readString();
+			name = Util.readline();
 			
 
 			System.out.println("Enter the price of item :");

@@ -8,7 +8,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/admin1/Downloads/regex.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="src" path="OOps"/>
-	<classpathentry kind="lib" path="OOps/lib/json-simple-1.1.jar"/>
+	<classpathentry kind="src" path="Inventory_mannagement"/>
+	<classpathentry kind="src" path="Stock_mannagement"/>
+	<classpathentry kind="lib" path="/home/admin1/workspace/json-simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

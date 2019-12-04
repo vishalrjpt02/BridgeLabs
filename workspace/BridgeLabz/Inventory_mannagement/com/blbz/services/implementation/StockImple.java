@@ -56,7 +56,7 @@ public class StockImple implements StockInterface{
 			int number_of_stock;
 			int stock_value;
 			System.out.println("Enter the name of company:");
-			name = Util.readString();
+			name = Util.readline();
 			
 			System.out.println("Enter the number of stock: ");
 			number_of_stock = Util.readint();
@@ -77,7 +77,7 @@ public class StockImple implements StockInterface{
 			fw.write(list_array.toJSONString());
 			fw.flush();
 			fw.close();
-			System.out.println("company added...");
+			System.out.println("company added...!!");
 		}	
 		catch(Exception e)
 		{
@@ -228,6 +228,7 @@ public class StockImple implements StockInterface{
 		catch(Exception e)
 		{
 			e.printStackTrace();
+			
 		}
 	}
 
