@@ -43,7 +43,7 @@ static MyLinkedList<StockModel> list;
 	 * @return-type: Doesn't return anything
 	 * 
 	 */
-	void printReport() {
+	static void printReport() {
 		int totalValue = 0;
 		
 		System.out.println("----------STOCK REPORT----------");

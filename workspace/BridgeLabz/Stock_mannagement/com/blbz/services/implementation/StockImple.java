@@ -34,7 +34,7 @@ import com.blbz.utility.Util;
 
 public class StockImple implements StockInterface {
 
-	static String path = "/home/admin1/workspace/BridgeLabz/Stock_mannagement/com/blbz/jsonfolder/sample2.json";
+	static String path = "BridgeLabz/Stock_mannagement/com/blbz/jsonfolder/CompanyList.json";
 	static double totalshare;
 	static double totalprice;
 	static Scanner sc=new Scanner(System.in);
@@ -307,7 +307,6 @@ public class StockImple implements StockInterface {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void buyShare(double amount, String symbol, File file2) {
 		int count = 0;
 		double price = 0;
@@ -430,7 +429,7 @@ public class StockImple implements StockInterface {
 	}
 
 	@SuppressWarnings("unchecked")
-	private JSONArray updateCompanyDetails(JSONArray jsonArray, int numberOfShare) {
+	private static JSONArray updateCompanyDetails(JSONArray jsonArray, int numberOfShare) {
 
 		long updatedShare = 0;
 
