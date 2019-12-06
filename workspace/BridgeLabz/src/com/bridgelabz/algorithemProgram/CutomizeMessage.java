@@ -1,7 +1,10 @@
 package com.bridgelabz.algorithemProgram;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
+
+
+
 
 public class CutomizeMessage {
 
@@ -13,7 +16,7 @@ public class CutomizeMessage {
 		String number = sc.next();
 		String date = sc.next();
 
-		System.out.println(Pattern.matches("[a-zA-Z0-9]{6}", "JA2Uk2"));// true
+		//System.out.println(Pattern.matches("[a-zA-Z0-9]{6}", "JA2Uk2"));// true
 
 		// Pattern pet = Pattern.compile(s);
 
