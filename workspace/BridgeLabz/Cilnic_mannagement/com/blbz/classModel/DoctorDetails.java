@@ -1,3 +1,11 @@
+/***********************************************************************************************************
+ *this is the class for wrapping our variables,i:e- Encapsulation of our variables
+ *@author  :vishal kumar
+ *@version :1.0
+ *@date    :05/12/19
+ *@File    :Utility.java
+ ***********************************************************************************************************/
+
 package com.blbz.classModel;
 
 public class DoctorDetails {

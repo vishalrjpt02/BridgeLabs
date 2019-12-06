@@ -1,10 +1,16 @@
+/***********************************************************************************************************
+ * This is the controller/main class for the opration to be performed is called by this class
+ *@author  :vishal kumar
+ *@version :1.0
+ *@date    :05/12/19
+ *@File    :ClinicControl.java
+ ***********************************************************************************************************/
 package com.blbz.controller;
 
 
+import com.blbz.Util.Utility;
+import com.blbz.services.CliniqueService;
 import com.blbz.services.implementation.CliniqueServiceImpl;
-import com.blbz.util.Utility;
-
-import services.CliniqueService;
 
 public class ClinicController {
 	static CliniqueService service = new CliniqueServiceImpl();

@@ -1,3 +1,11 @@
+/***********************************************************************************************************
+ *this file used for encapulation of patient variables
+ *@author  :vishal kumar
+ *@version :1.0
+ *@date    :05/12/19
+ *@File    :PatientDetyails.java
+ ***********************************************************************************************************/
+
 package com.blbz.classModel;
 
 public class PatientDetails {
