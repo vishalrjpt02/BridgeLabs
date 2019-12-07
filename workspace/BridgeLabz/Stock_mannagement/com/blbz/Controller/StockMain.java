@@ -20,7 +20,7 @@ import com.blbz.utility.Util;
 public class StockMain {
 	
 	static StockImple stockObject= new StockImple();
-	static String path = "jsonfolder/";
+	static String path = "/home/admin1/workspace/BridgeLabz/Stock_mannagement/com/blbz/jsonfolder";
 	static File file;
 	static Scanner sc=new Scanner(System.in);
 	
@@ -43,7 +43,7 @@ public class StockMain {
 			break;
 		case '2':
 			System.out.println("enter your name");
-			createAccount(Util.readString());
+			createAccount(sc.nextLine());
 			break;
 		case '3':
 			stockObject.removeshare();
@@ -78,7 +78,7 @@ public class StockMain {
 	   
 	   private static void createAccount(String fileName) {
 			
-			file = new File("jsonfolder/"+fileName+".json");
+			file = new File("/home/admin1/workspace/BridgeLabz/Stock_mannagement/com/blbz/jsonfolder"+fileName+".json");
 			try(FileWriter fileWriter = new FileWriter(file)){
 				System.out.println(file+" Created Successfully !!!");
 				if(file.length()==0) {
@@ -100,6 +100,7 @@ public class StockMain {
 			System.out.println("1. Buy Some Share");
 			System.out.println("2. Sell some Share");
 			System.out.println("3. Print Transaction");
+			System.out.println("4. Exit from customer window");
 			double amount;
 			String symbol;
 			
@@ -109,14 +110,14 @@ public class StockMain {
 			case "1":
 				System.out.println("Enter amount :\nEnter Symbol :");
 				amount = Util.readDouble();
-				symbol = Util.readString();
+				symbol = sc.next();
 				stockObject.buyShare(amount,symbol,file2);
 				buyOrSellStock(file2);
 				break;
 			case "2":
 				System.out.println("Enter amount :\nEnter Symbol :");
 				amount = Util.readDouble();
-				symbol = Util.readString();
+				symbol = sc.next();
 				stockObject.sellShare(amount,symbol,file2);
 				buyOrSellStock(file2);
 				break;
@@ -124,6 +125,9 @@ public class StockMain {
 				stockObject.printTransactionDetails();
 				buyOrSellStock(file2);
 				break;
+			case "4":
+			System.out.println("Thank you");
+			break;
 			}
 			
 		}

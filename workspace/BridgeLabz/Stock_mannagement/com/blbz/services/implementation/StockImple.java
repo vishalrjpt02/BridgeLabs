@@ -34,7 +34,7 @@ import com.blbz.utility.Util;
 
 public class StockImple implements StockInterface {
 
-	static String path = "BridgeLabz/Stock_mannagement/com/blbz/jsonfolder/CompanyList.json";
+	static String path = "/home/admin1/workspace/BridgeLabz/Stock_mannagement/com/blbz/jsonfolder/CompanyList.json";
 	static double totalshare;
 	static double totalprice;
 	static Scanner sc=new Scanner(System.in);
@@ -118,11 +118,11 @@ public class StockImple implements StockInterface {
 				JSONParser jp = new JSONParser();
 				Object parse = (Object) jp.parse(new FileReader(path));
 				
-				JSONArray ja = (JSONArray) parse;
+				JSONArray ja = (JSONArray)parse;
 				// System.out.println(parse);
 
 				for (Object i : ja) {
-					JSONObject jobj = (JSONObject) i;
+					JSONObject jobj = (JSONObject)i;
 					System.out.println("Company name : " + jobj.get("Company_name"));
 					System.out.println("number of Stocks : " + jobj.get("Stocks"));
 					System.out.println("Stock price : " + jobj.get("stock_value"));

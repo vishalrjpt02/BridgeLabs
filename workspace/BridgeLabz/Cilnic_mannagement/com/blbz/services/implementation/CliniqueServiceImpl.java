@@ -111,7 +111,9 @@ public class CliniqueServiceImpl implements CliniqueService {
 			System.out.println("Enter valid Doctor "+key);
 			ClinicController.doctorChoice(choice);
 	}
-
+/*
+ * creates the appointment for patient
+ */
 	@SuppressWarnings("unchecked")
 	private void makeAppointment(JSONObject doctorJsonObject) {
 		String patientId = "";

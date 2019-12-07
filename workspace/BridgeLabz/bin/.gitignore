@@ -1,2 +1,10 @@
+/Singleton/
+/StaticBlockInit/
+/LazyInit/
+/ThradSafeSingleton/
+/billPughSingleton/
+/reflectionToDestroy/
+/enumSingleton/
+/serializationAndSingleton/
+/singleton/
 /com/
-/JsonFile/

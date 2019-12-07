@@ -23,7 +23,7 @@ import com.blbz.utility.Util;
 public class InventoryImplementation implements InventoryInterface {
 
 	static String path ="/home/admin1/Desktop/vishal/sample1.json";
-	static int price	 = 0;
+	static int price = 0;
 	static int total = 0;
 
 	/*to add the element from list
